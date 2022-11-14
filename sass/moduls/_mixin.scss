@@ -1,0 +1,23 @@
+@mixin fonts($size, $weight, $line-height) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line-height;
+}
+
+@mixin px($top, $bottom) {
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+@mixin  py($left, $right) {
+    padding-left: $left;
+    padding-right: $right;
+}
+
+@mixin mx($top, $bottom) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+@mixin my($left, $right) {
+    margin-left: $left;
+    margin-right: $right;
+}
