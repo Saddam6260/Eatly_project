@@ -6,6 +6,54 @@ a{
 }
 .btn{
     border: none;
-    background: none;
-    font-size: 20px;
+    background-color: $orange2f;
+    @include px(7px, 7px);
+    @include py(12px, 12px);
+    border-radius: 9px;
+
+    @include media($lg) {
+        @include px(8px, 8px);
+        @include py(14px, 14px);
+    }
+    @include media($xl) {
+        border-radius: 10px;
+    }
+    @include media($xxl) {
+        @include px(9px, 9px);
+        @include py(15px, 15px);
+        border-radius: 12px;
+    }
+    @include media($mxl) {
+        @include px(10px, 10px);
+        @include py(17px, 17px);
+    }
+    @include media($xxl) {
+        @include px(11px, 11px);
+        @include py(19px, 19px);
+    }
+    
+    a{
+        font-size: 14px;
+        font-weight: 500;
+        color: $brown00;
+
+        @include media($md) {
+            font-size: 15px;
+        }
+        @include media($lg) {
+            font-size: 17px;
+        }
+        @include media($xl) {
+            font-size: 19px;
+        }
+        @include media($xxl) {
+            font-size: 21px;
+        }
+        @include media($mxl) {
+            font-size: 23px;
+        }
+        @include media($lxl) {
+            font-size: 25px;
+        }
+    }
 }

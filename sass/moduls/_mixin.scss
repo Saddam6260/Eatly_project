@@ -21,3 +21,32 @@
     margin-left: $left;
     margin-right: $right;
 }
+
+$screensize : (
+    $xs : 400px,
+    $sm : 540px,
+    $md : 720px,
+    $lg : 940px,
+    $xl : 1140px,
+    $xxl : 1320px,
+    $mxl : 1700px,
+    $lxl : 1800px,
+);
+
+@mixin media($width) {
+    @media only screen and (min-width: $width) {
+        @content;
+    }
+}
+
+.container{
+    width: 100%;
+    @include my(auto, auto);
+}
+@each $screen, $max in $screensize {
+    .container {
+        @include media($screen) {
+            max-width: ($max);
+        }
+    }
+}

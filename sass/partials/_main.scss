@@ -1,0 +1,231 @@
+.main-wrap {
+    @include py(15px, 15px);
+
+    @include media($xs) {
+        @include py(5px, 5px);
+    }
+    @include media($sm) {
+        @include py(0px, 0px);
+    }
+}
+.topber {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+    @include media($md) {
+        margin-top: 25px;
+    }
+    @include media($xxl) {
+        margin-top: 30px;
+    }
+
+    .top-logo{
+        display: flex;
+        align-items: center;
+        column-gap: 3px;
+
+        @include media($xs) {
+            column-gap: 4px;
+        }
+
+        img{
+            width: 17px;
+            height: 19px;
+
+            @include media($sm) {
+                height: 20px;
+            }
+            @include media($md) {
+                height: 23px;
+            }
+            @include media($xl) {
+                height: 24px;
+            }
+            @include media($xxl) {
+                height: 27px;
+                width: 19px;
+            }
+            @include media($mxl) {
+                height: 32px;
+                width: 22px;
+            }
+            @include media($lxl) {
+                height: 34px;
+                width: 25px;
+            }
+        }
+        h1{
+            font-size: 26px;
+            color: $orange2f;
+
+            @include media($sm) {
+                font-size: 28px;
+            }
+            @include media($md) {
+                font-size: 31px;
+            }
+            @include media($lg) {
+                font-size: 34px;
+            }
+            @include media($xl) {
+                font-size: 37px;
+            }
+            @include media($xxl) {
+                font-size: 41px;
+            }
+            @include media($mxl) {
+                font-size: 45px;
+            }
+            @include media($lxl) {
+                font-size: 48px;
+            }
+        }
+    }
+
+    .top-btn{
+        display: none;
+
+        @include media($md) {
+            display: block;
+        }
+    }
+    .show-btn{
+        font-size: 19px;
+
+        @include media($sm) {
+            font-size: 21px;
+        }
+        @include media($md) {
+            display: none;
+        }
+    }
+
+}
+.menu{
+    display: none;
+
+    @include media($md) {
+        display: block;
+    }
+    ul{
+        display: flex;
+        column-gap: 20px;
+
+        @include media($lg) {
+            column-gap: 30px;
+        }
+        @include media($xl) {
+            column-gap: 40px;
+        }
+        @include media($xxl) {
+            column-gap: 50px;
+        }
+        @include media($mxl) {
+            column-gap: 80px;
+        }
+        @include media($lxl) {
+            column-gap: 110px;
+        }
+
+        li{
+            @include media($md) {
+                font-size: 17px;
+            }
+            @include media($lg) {
+                font-size: 18px;
+            }
+            @include media($xl) {
+                font-size: 19px;
+            }
+            @include media($xxl) {
+                font-size: 21px;
+            }
+            @include media($mxl) {
+                font-size: 23px;
+            }
+            @include media($lxl) {
+                font-size: 25px;
+            } 
+        }
+    }
+}
+
+// Main section
+
+main{
+    text-align: center;
+
+    @include media($md) {
+        text-align: start;
+    }
+
+    h1{
+        font-size: 35px;
+        display: flex;
+        flex-flow: column wrap;
+        font-weight: 700;
+        line-height: 35px;
+
+        @include media($sm) {
+            font-size: 40px;
+            line-height: 40px;
+        }
+        @include media($md) {
+            font-size: 45px;
+            line-height: 42px;
+        }
+        @include media($lg) {
+            font-size: 47px;
+            line-height: 44px;
+        }
+        @include media($xl) {
+            font-size: 50px;
+            line-height: 50px;
+        }
+        @include media($xxl) {
+            font-size: 65px;
+            line-height: 65px;
+        }
+        @include media($mxl) {
+            font-size: 80px;
+            line-height: 80px;
+        }
+
+        .eating{
+            color: $orange2f;
+        }
+    }
+    p{
+        font-size: 15px;
+        font-weight: 400;
+
+        @include media($sm) {
+            font-size: 16px;
+        }
+        @include media($md) {
+            font-size: 17px;
+        }
+        @include media($lg) {
+            font-size: 18px;
+        }
+        @include media($xl) {
+            font-size: 19px;
+        }
+        @include media($xxl) {
+            font-size: 21px;
+        }
+        @include media($mxl) {
+            font-size: 23px;
+        }
+        @include media($lxl) {
+            font-size: 25px;
+        }
+        @include media($md) {
+            display: flex;
+            flex-flow: column;
+        }
+    }
+}
