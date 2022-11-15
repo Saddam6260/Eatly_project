@@ -128,27 +128,6 @@
         @include media($lxl) {
             column-gap: 110px;
         }
-
-        li{
-            @include media($md) {
-                font-size: 17px;
-            }
-            @include media($lg) {
-                font-size: 18px;
-            }
-            @include media($xl) {
-                font-size: 19px;
-            }
-            @include media($xxl) {
-                font-size: 21px;
-            }
-            @include media($mxl) {
-                font-size: 23px;
-            }
-            @include media($lxl) {
-                font-size: 25px;
-            } 
-        }
     }
 }
 
@@ -202,12 +181,12 @@ main{
         }
     }
     p{
-        font-size: 16px;
+        font-size: 19px;
         font-weight: 400;
         color: $purplefc;
 
         @include media($sm) {
-            font-size: 16px;
+            font-size: 22px;
         }
         @include media($md) {
             font-size: 17px;
@@ -216,16 +195,16 @@ main{
             font-size: 18px;
         }
         @include media($xl) {
-            font-size: 19px;
-        }
-        @include media($xxl) {
-            font-size: 21px;
-        }
-        @include media($mxl) {
             font-size: 23px;
         }
-        @include media($lxl) {
+        @include media($xxl) {
+            font-size: 24px;
+        }
+        @include media($mxl) {
             font-size: 25px;
+        }
+        @include media($lxl) {
+            font-size: 26px;
         }
         @include media($md) {
             display: flex;
@@ -268,8 +247,8 @@ main{
 
         .watch{
             font-size: 13px;
-            width: 30px;
-            height: 30px;
+            width: 32px;
+            height: 32px;
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -278,12 +257,12 @@ main{
             background-color: blue;
 
             @include media($sm) {
-                width: 32px;
-                height: 32px;
+                width: 33px;
+                height: 33px;
             }
             @include media($lg) {
-                width: 36px;
-                height: 36px;
+                width: 37px;
+                height: 37px;
                 font-size: 14px;
             }
             @include media($xl) {
@@ -307,29 +286,29 @@ main{
             }
         }
         h4{
-            font-size: 15px;
             font-weight: 600;
+            font-size: 19px;
     
             @include media($sm) {
-                font-size: 16px;
+                font-size: 20px;
             }
             @include media($md) {
-                font-size: 17px;
-            }
-            @include media($lg) {
-                font-size: 18px;
-            }
-            @include media($xl) {
-                font-size: 19px;
-            }
-            @include media($xxl) {
                 font-size: 21px;
             }
-            @include media($mxl) {
+            @include media($lg) {
+                font-size: 22px;
+            }
+            @include media($xl) {
                 font-size: 23px;
             }
-            @include media($lxl) {
+            @include media($xxl) {
+                font-size: 24px;
+            }
+            @include media($mxl) {
                 font-size: 25px;
+            }
+            @include media($lxl) {
+                font-size: 26px;
             }
         }
     }

@@ -37,57 +37,11 @@ footer{
 }
 .foot-right{
     a{
-        font-size: 15px;
         color: $graya3;
-
-        @include media($sm) {
-            font-size: 16px;
-        }
-        @include media($md) {
-            font-size: 17px;
-        }
-        @include media($lg) {
-            font-size: 18px;
-        }
-        @include media($xl) {
-            font-size: 19px;
-        }
-        @include media($xxl) {
-            font-size: 21px;
-        }
-        @include media($mxl) {
-            font-size: 23px;
-        }
-        @include media($lxl) {
-            font-size: 25px;
-        }
     }
 }
 .foot-left{
     p{
-        font-size: 15px;
         color: $graya3;
-
-        @include media($sm) {
-            font-size: 16px;
-        }
-        @include media($md) {
-            font-size: 17px;
-        }
-        @include media($lg) {
-            font-size: 18px;
-        }
-        @include media($xl) {
-            font-size: 19px;
-        }
-        @include media($xxl) {
-            font-size: 21px;
-        }
-        @include media($mxl) {
-            font-size: 23px;
-        }
-        @include media($lxl) {
-            font-size: 25px;
-        }
     }
 }
