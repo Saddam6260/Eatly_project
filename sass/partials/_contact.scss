@@ -1,11 +1,48 @@
+#foot-wrap{
+    background-image: linear-gradient(to right, white, $purplefa,  white);
+    margin-top: 40px;
+
+    @include media($sm) {
+        margin-top: 50px;
+    }
+    @include media($md) {
+        margin-top: 60px;
+    }
+    @include media($lg) {
+        margin-top: 70px;
+    }
+    @include media($xxl) {
+        margin-top: 90px;
+    }
+    @include media($mxl) {
+        margin-top: 110px;
+    }
+}
 #contact{
-    margin-bottom: 20px;
+    @include px(20px, 20px);
+
+    @include media($sm) {
+        @include px(30px, 30px);
+    }
+    @include media($lg) {
+        @include px(40px, 40px);
+    }
+    @include media($xxl) {
+        @include px(50px, 50px);
+    }
+    @include media($mxl) {
+        @include px(60px, 60px);
+    }
+    @include media($lxl) {
+        @include px(70px, 70px);
+    }
 }
 .contact-wrap {
     ul{
         display: flex;
         row-gap: 7px;
         flex-flow: column wrap;
+        margin-top: 7px;
 
         @include media($lg) {
             row-gap: 10px;
@@ -90,8 +127,8 @@
 .contact-left{
     grid-area: left;
     .top-logo {
-        h1{
-           color: $purplefb; 
+        h2{
+           color: $purplefbd; 
         }
     }
     p{
@@ -110,11 +147,9 @@
 }
 .about{
     grid-area: about;
-    margin-top: 5px;
 }
 .movement{
     grid-area: movement;
-    margin-top: 5px;
 }
 .company{
     grid-area: company;

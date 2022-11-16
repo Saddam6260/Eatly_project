@@ -1,0 +1,144 @@
+#best-program {
+    .container{
+
+        display: flex;
+        flex-flow: column wrap;
+        row-gap: 40px;
+    }
+}
+#best-program{
+    margin-top: 70px;
+
+    .content{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        row-gap: 20px;
+
+        @include media($sm) {
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+
+
+        div:first-child{
+            display: flex;
+            column-gap: 10px;
+            
+            h2{
+                color: $purple99;
+            }
+        }
+        div:last-child{
+            display: flex;
+            column-gap: 10px;
+
+            @include media($lg) {
+                column-gap: 13px;
+            }
+            @include media($lxl) {
+                column-gap: 17px;
+            }
+            .arrow{
+                border: 3px solid $purpleea;
+                color: $purplefb;
+
+
+            }
+        }
+    }
+}
+
+.healty-card{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: $purplefb;
+
+    .card-1{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        row-gap: 8px;
+        width: 100%;
+
+        @include media($sm) {
+            width: 50%;
+        }
+        @include media($lg) {
+            width: 33%;
+        }
+        @include media($mxl) {
+            width: 25%;
+        }
+    }
+    .card{  
+        .l-btn{
+            border: 3px solid $purplefc;
+            background-color: $purple99;
+        }
+    
+        h3{
+            font-size: 20px;
+    
+            @include media($sm) {
+                font-size: 22px;
+            }
+            @include media($md) {
+                font-size: 24px;
+            }
+            @include media($lg) {
+                font-size: 26px;
+            }
+            @include media($xl) {
+                font-size: 28px;
+            }
+            @include media($xxl) {
+                font-size: 31px;
+            }
+            @include media($mxl) {
+                font-size: 33px;
+            }
+            @include media($lxl) {
+                font-size: 35px;
+            }
+        }
+    
+        p{
+            color: $purplefc;
+        }
+    }
+    .card-2{
+        text-align: center;
+        display: none;
+        .l-btn{
+            @include my(auto, auto);
+        }
+        @include media($sm) {
+            display: block;
+            width: 50%;
+        }
+        @include media($lg) {
+            width: 33%;
+        }
+        @include media($mxl) {
+            width: 25%;
+        }
+    }
+    .card-3{
+        @include media($lg) {
+            display: block;
+            width: 33%;
+        }
+        @include media($mxl) {
+            width: 25%;
+        }
+    }
+    .card-4{
+
+        @include media($mxl){
+            display: block;
+            width: 25%;
+        }
+    }
+}

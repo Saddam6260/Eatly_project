@@ -1,0 +1,161 @@
+#about-us {
+
+    .content{
+        display: flex;
+        flex-flow: column wrap;  
+        
+        @include media($md) {
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+
+        .img-wrap{
+            @include media($md) {
+                width: 50%;
+            }
+        }
+        .content-wrap{
+            @include media($md) {
+                width: 50%;
+            }
+        }
+    }
+} 
+
+.testimonial {
+    padding: 10px;
+    .icon-wrap{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        column-gap: 3px;
+
+        @include media($xs) {
+            column-gap: 6px;
+        }
+
+        @include media($sm) {
+            column-gap: 10px;
+        }
+        @include media($xl) {
+            column-gap: 12px;
+        }
+        @include media($xxl) {
+            column-gap: 14px;
+        }
+        @include media($mxl) {
+            column-gap: 16px;
+        }
+        @include media($lxl) {
+            column-gap: 18px;
+        }
+
+        h2{
+            color: $purple99;
+        }
+    }
+    p{
+        text-align: justify;
+        display: block;
+        margin-top: 10px;
+        color: $graya3;
+    }
+}
+
+.rara-sanchez{
+    background-color: $purpleea;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 25px;
+
+    @include media($sm) {
+        margin-top: 30px;
+    }
+    @include media($xl) {
+        margin-top: 40px;
+    }
+    @include media($xxl) {
+        margin-top: 47px;
+    }
+    @include media($mxl) {
+        margin-top: 58px;
+    }
+    @include media($lxl) {
+        margin-top: 60px;
+    }
+
+    .s-btn{
+        margin-top: -25px;
+        margin-bottom: 15px;
+
+        @include media($md) {
+            margin-top: -29px;
+        }
+        @include media($lg) {
+            margin-top: -35px;
+            margin-bottom: 20px;
+        }
+        @include media($xl) {
+            margin-top: -39px;
+            margin-bottom: 20px;
+        }
+        @include media($xxl) {
+            margin-top: -43px;
+            margin-bottom: 20px;
+        }
+        @include media($mxl) {
+            margin-top: -46px;
+            margin-bottom: 23px;
+        }
+        @include media($mxl) {
+            margin-top: -47px;
+        }
+    }
+
+    @include media($md) {
+        padding: 15px;
+    }
+    @include media($lg) {
+        padding: 20px;
+    }
+    p{
+        font-style: italic;
+        font-weight: 600;
+        color: $graya3;
+    }
+    h3{
+        color: $purplefbd;
+        margin-top: 8px;
+
+        @include media($sm) {
+            margin-top: 10px;
+        }
+        @include media($lg) {
+            margin-top: 15px;
+        }
+        @include media($xxl) {
+            margin-top: 17px;
+        }
+        @include media($mxl) {
+            margin-top: 20px;
+        }
+    }
+}
+
+.freelancer-wrap{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    p{
+        font-style: normal;
+    }
+
+    .arrow-wrap{
+        display: flex;
+        flex-flow: row wrap;
+    }
+}
+
+

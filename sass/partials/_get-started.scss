@@ -1,0 +1,37 @@
+#get-started{
+    .content{
+        @include px(30px, 30px);
+        @include py(5px, 5px);
+        @include my(5px, 5px);
+        background-color: $purplefbd;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        outline: whitesmoke solid 10px;
+        border-radius: 20px;
+
+        .l-btn{
+            border: 3px solid $purplefc;
+            background-color: $purple99;
+        }
+        h2{
+            color: white;
+
+            span{
+                color: $orange2f;
+            }
+        }
+        p{
+            display: block;
+            text-align: center;
+
+            @include media($sm) {
+                display: flex;
+            }
+        }
+        .btn{
+            margin-top: 10px;
+        }
+    }
+}
