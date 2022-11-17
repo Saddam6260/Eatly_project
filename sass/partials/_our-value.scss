@@ -1,36 +1,148 @@
 #our-value{
+    margin-top: 40px;
 
+    @include media($sm) {
+        margin-top: 50px;
+    }
+    @include media($md) {
+        margin-top: 60px;
+    }
+    @include media($lg) {
+        margin-top: 70px;
+    }
+    @include media($xxl) {
+        margin-top: 90px;
+    }
+    @include media($mxl) {
+        margin-top: 110px;
+    }
+    .container{
+        display: flex;
+    flex-flow: column wrap;
+
+    @include media($xl) {
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    }
+
+    .img{
+        width: 100%;
+
+        @include media($xl) {
+            width: 50%;
+        }
+    }
     .content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 25px;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: 'card1'
+                            'card2'
+                            'card3' 
+                            'card4'
+                            'card5';
 
-        div:first-child{
+        @include media($sm) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: 'card1 card1'
+                                'card2 card3'
+                                'card4 card5';
+            justify-content: space-around;
+            column-gap: 25px;
+        }
+        @include media($lg) {
+            row-gap: 35px;
+            column-gap: 35px;
+        }
+        @include media($xl) {
+            width: 50%;
+            row-gap: 45px;
+            column-gap: 30px;
+        }
+        
+        .card{
+            background-color: $purplefa;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            text-align: center;
+            @include px(25px, 25px);
+            @include py(20px, 20px);
+            row-gap: 7px;
+            border-radius: 35px;
+
+            @include media($xl) {
+                align-items: start;
+                text-align: start;
+            }
+            .s-btn{
+                @include media($xl) {
+                    margin-top: -45px;
+                }
+            }
+            .common-h3{
+                color: $purple99;
+                @include media($xl) {
+                    margin-top: 15px;
+                }
+            }
+            p{
+                color: $graya3;
+                @include media($xl) {
+                    align-items: start;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        
+        .card:nth-child(1) {
+            grid-area: card1;
+            margin-bottom: 20px;
+            background-color: initial;
+
+            @include media($xl) {
+                @include py(0px, 0px);
+            }
+
+            p{
+                @include media($xl) {
+                    display: flex;
+                    flex-flow: column wrap;
+                }
+            }
 
             .head-wrap{
                 display: flex;
-                column-gap: 4px;
+                flex-flow: column wrap;
+                align-items: center;
 
-                @include media($xs) {
-                    column-gap: 6px;
+                h2{
+                    color: $purple99;
                 }
-        
-                @include media($sm) {
-                    column-gap: 10px;
-                }
+
                 @include media($xl) {
-                    column-gap: 12px;
-                }
-                @include media($xxl) {
-                    column-gap: 14px;
-                }
-                @include media($mxl) {
-                    column-gap: 16px;
-                }
-                @include media($lxl) {
-                    column-gap: 18px;
+                    align-items: start;
+                    flex-flow: row wrap;
+                    column-gap: 20px;
                 }
             }
-            .card{
-                
-            }
+        }
+        .card:nth-child(2) {
+            grid-area: card2;
+        }
+        .card:nth-child(3) {
+            grid-area: card3;
+        }
+        .card:nth-child(4) {
+            grid-area: card4;
+        }
+        .card:nth-child(5) {
+            grid-area: card5;
         }
     }
 }
