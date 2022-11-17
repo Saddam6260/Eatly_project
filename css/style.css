@@ -1047,8 +1047,61 @@ main p {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  outline: whitesmoke solid 10px;
-  border-radius: 20px;
+  outline: #f6eaf6 solid 10px;
+  border-radius: 35px;
+}
+@media only screen and (min-width: 576px) {
+  #get-started .content {
+    margin-left: 7px;
+    margin-right: 7px;
+    outline: #f6eaf6 solid 14px;
+    border-radius: 45px;
+    row-gap: 5px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #get-started .content {
+    margin-left: 9px;
+    margin-right: 9px;
+    outline: #f6eaf6 solid 18px;
+    border-radius: 55px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    row-gap: 10px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #get-started .content {
+    margin-left: 10px;
+    margin-right: 10px;
+    outline: #f6eaf6 solid 20px;
+    border-radius: 60px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    row-gap: 15px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #get-started .content {
+    margin-left: 12px;
+    margin-right: 12px;
+    outline: #f6eaf6 solid 24px;
+    border-radius: 65px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    row-gap: 20px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #get-started .content {
+    margin-left: 15px;
+    margin-right: 15px;
+    outline: #f6eaf6 solid 30px;
+    border-radius: 70px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    row-gap: px;
+  }
 }
 #get-started .content .l-btn {
   border: 3px solid #d0a9fc;
@@ -1063,6 +1116,7 @@ main p {
 #get-started .content p {
   display: block;
   text-align: center;
+  color: #d0a9fc;
 }
 @media only screen and (min-width: 576px) {
   #get-started .content p {
@@ -1071,6 +1125,7 @@ main p {
 }
 #get-started .content .btn {
   margin-top: 10px;
+  border: 3px solid #d0a9fc;
 }
 
 #about-us {
