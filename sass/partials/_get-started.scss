@@ -3,7 +3,7 @@
         @include px(30px, 30px);
         @include py(5px, 5px);
         @include my(5px, 5px);
-        background-color: $purplefbd;
+        background-image: linear-gradient(to left top, $purplede, $purplefbd, #b389e3);
         display: flex;
         flex-flow: column wrap;
         justify-content: center;

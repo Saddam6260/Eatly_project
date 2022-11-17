@@ -43,13 +43,13 @@
 
 @media only screen and (min-width: 1800px) {
   .container {
-    max-width: 1700px;
+    max-width: 1550px;
   }
 }
 
 @media only screen and (min-width: 1920px) {
   .container {
-    max-width: 1800px;
+    max-width: 1650px;
   }
 }
 
@@ -920,121 +920,178 @@ main p {
   color: #9a6dfb;
 }
 
-.healty-card {
-  display: flex;
-  flex-flow: row wrap;
-  background-color: #9a6dfb;
-}
-.healty-card .card-1 {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  justify-content: center;
-  row-gap: 8px;
-  width: 100%;
+.healthy-card {
+  background-color: #f1e0f1;
+  border-radius: 20px;
 }
 @media only screen and (min-width: 576px) {
-  .healty-card .card-1 {
-    width: 50%;
+  .healthy-card {
+    border-radius: 30px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .healty-card .card-1 {
-    width: 33%;
+  .healthy-card {
+    border-radius: 39px;
   }
 }
-@media only screen and (min-width: 1800px) {
-  .healty-card .card-1 {
-    width: 25%;
+@media only screen and (min-width: 1400px) {
+  .healthy-card {
+    border-radius: 50px;
   }
 }
-.healty-card .card .l-btn {
+
+.cardset {
+  background-image: linear-gradient(to left top, #9955de, #9356fb, #b389e3);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  border-radius: 18px;
+  margin: 16px;
+}
+@media only screen and (min-width: 576px) {
+  .cardset {
+    margin: 18px;
+    border-radius: 28px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .cardset {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .cardset {
+    margin: 22px;
+    border-radius: 37px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .cardset {
+    border-radius: 50px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+}
+.cardset .card {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+@media only screen and (min-width: 576px) {
+  .cardset .card {
+    row-gap: 8px;
+  }
+}
+.cardset .card .l-btn {
   border: 3px solid #d0a9fc;
   background-color: #6a5399;
 }
-.healty-card .card h3 {
+.cardset .card h3 {
   font-size: 20px;
+  color: white;
 }
 @media only screen and (min-width: 576px) {
-  .healty-card .card h3 {
+  .cardset .card h3 {
     font-size: 22px;
   }
 }
 @media only screen and (min-width: 768px) {
-  .healty-card .card h3 {
+  .cardset .card h3 {
     font-size: 24px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .healty-card .card h3 {
+  .cardset .card h3 {
     font-size: 26px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .healty-card .card h3 {
+  .cardset .card h3 {
     font-size: 28px;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .healty-card .card h3 {
+  .cardset .card h3 {
     font-size: 31px;
   }
 }
 @media only screen and (min-width: 1800px) {
-  .healty-card .card h3 {
+  .cardset .card h3 {
     font-size: 33px;
   }
 }
 @media only screen and (min-width: 1920px) {
-  .healty-card .card h3 {
+  .cardset .card h3 {
     font-size: 35px;
   }
 }
-.healty-card .card p {
+.cardset .card p {
   color: #d0a9fc;
 }
-.healty-card .card-2 {
-  text-align: center;
+.cardset .card:nth-child(2) {
   display: none;
 }
-.healty-card .card-2 .l-btn {
-  margin-left: auto;
-  margin-right: auto;
-}
-@media only screen and (min-width: 576px) {
-  .healty-card .card-2 {
-    display: block;
-    width: 50%;
+@media only screen and (min-width: 768px) {
+  .cardset .card:nth-child(2) {
+    display: flex;
   }
+}
+.cardset .card:nth-child(3) {
+  display: none;
 }
 @media only screen and (min-width: 992px) {
-  .healty-card .card-2 {
-    width: 33%;
+  .cardset .card:nth-child(3) {
+    display: flex;
   }
 }
-@media only screen and (min-width: 1800px) {
-  .healty-card .card-2 {
-    width: 25%;
-  }
+.cardset .card:nth-child(4) {
+  display: none;
 }
-@media only screen and (min-width: 992px) {
-  .healty-card .card-3 {
-    display: block;
-    width: 33%;
-  }
-}
-@media only screen and (min-width: 1800px) {
-  .healty-card .card-3 {
-    width: 25%;
-  }
-}
-@media only screen and (min-width: 1800px) {
-  .healty-card .card-4 {
-    display: block;
-    width: 25%;
+@media only screen and (min-width: 1400px) {
+  .cardset .card:nth-child(4) {
+    display: flex;
   }
 }
 
+#our-value .content div:first-child .head-wrap {
+  display: flex;
+  column-gap: 4px;
+}
+@media only screen and (min-width: 425px) {
+  #our-value .content div:first-child .head-wrap {
+    column-gap: 6px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  #our-value .content div:first-child .head-wrap {
+    column-gap: 10px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #our-value .content div:first-child .head-wrap {
+    column-gap: 12px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #our-value .content div:first-child .head-wrap {
+    column-gap: 14px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #our-value .content div:first-child .head-wrap {
+    column-gap: 16px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  #our-value .content div:first-child .head-wrap {
+    column-gap: 18px;
+  }
+}
 #get-started .content {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -1042,7 +1099,7 @@ main p {
   padding-right: 5px;
   margin-left: 5px;
   margin-right: 5px;
-  background-color: #9356fb;
+  background-image: linear-gradient(to left top, #9955de, #9356fb, #b389e3);
   display: flex;
   flex-flow: column wrap;
   justify-content: center;

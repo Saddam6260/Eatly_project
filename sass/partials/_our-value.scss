@@ -1,0 +1,36 @@
+#our-value{
+
+    .content{
+
+        div:first-child{
+
+            .head-wrap{
+                display: flex;
+                column-gap: 4px;
+
+                @include media($xs) {
+                    column-gap: 6px;
+                }
+        
+                @include media($sm) {
+                    column-gap: 10px;
+                }
+                @include media($xl) {
+                    column-gap: 12px;
+                }
+                @include media($xxl) {
+                    column-gap: 14px;
+                }
+                @include media($mxl) {
+                    column-gap: 16px;
+                }
+                @include media($lxl) {
+                    column-gap: 18px;
+                }
+            }
+            .card{
+                
+            }
+        }
+    }
+}

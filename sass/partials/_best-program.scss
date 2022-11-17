@@ -1,6 +1,5 @@
 #best-program {
     .container{
-
         display: flex;
         flex-flow: column wrap;
         row-gap: 40px;
@@ -48,31 +47,55 @@
         }
     }
 }
+.healthy-card{
+    background-color: #f1e0f1;
+    border-radius: 20px;
 
-.healty-card{
+    @include media($sm) {
+        border-radius: 30px;
+    }
+    @include media($lg) {
+        border-radius: 39px;
+    }
+    @include media($xxl) {
+        border-radius: 50px;
+    }
+}
+.cardset {
+    background-image: linear-gradient(to left top, $purplede, $purplefbd, #b389e3);
+    @include px(25px, 25px);
     display: flex;
     flex-flow: row wrap;
-    background-color: $purplefb;
+    justify-content: space-around;
+    border-radius: 18px;
+    margin: 16px;
 
-    .card-1{
+    @include media($sm) {
+        margin: 18px;
+        border-radius: 28px;
+        @include px(30px, 30px);
+    }
+    @include media($md) {
+        @include px(40px, 40px);
+    }
+    @include media($lg) {
+        margin: 22px;
+        border-radius: 37px;
+    }
+    @include media($xxl) {
+        border-radius: 50px;
+        @include px(45px, 45px);
+    }
+
+    .card{  
         display: flex;
         flex-flow: column wrap;
         align-items: center;
-        justify-content: center;
-        row-gap: 8px;
-        width: 100%;
-
+        
         @include media($sm) {
-            width: 50%;
+            row-gap: 8px;
         }
-        @include media($lg) {
-            width: 33%;
-        }
-        @include media($mxl) {
-            width: 25%;
-        }
-    }
-    .card{  
+        
         .l-btn{
             border: 3px solid $purplefc;
             background-color: $purple99;
@@ -80,6 +103,7 @@
     
         h3{
             font-size: 20px;
+            color: white;
     
             @include media($sm) {
                 font-size: 22px;
@@ -108,37 +132,25 @@
             color: $purplefc;
         }
     }
-    .card-2{
-        text-align: center;
+    .card:nth-child(2) {
         display: none;
-        .l-btn{
-            @include my(auto, auto);
-        }
-        @include media($sm) {
-            display: block;
-            width: 50%;
-        }
-        @include media($lg) {
-            width: 33%;
-        }
-        @include media($mxl) {
-            width: 25%;
-        }
-    }
-    .card-3{
-        @include media($lg) {
-            display: block;
-            width: 33%;
-        }
-        @include media($mxl) {
-            width: 25%;
-        }
-    }
-    .card-4{
 
-        @include media($mxl){
-            display: block;
-            width: 25%;
+        @include media($md) {
+            display: flex;
+        }
+    }
+    .card:nth-child(3) {
+        display: none;
+
+        @include media($lg) {
+            display: flex;
+        }
+    }
+    .card:nth-child(4) {
+        display: none;
+
+        @include media($xxl) {
+            display: flex;
         }
     }
 }
