@@ -1073,6 +1073,34 @@ main p {
   margin-top: 10px;
 }
 
+#about-us {
+  margin-top: 40px;
+}
+@media only screen and (min-width: 576px) {
+  #about-us {
+    margin-top: 50px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #about-us {
+    margin-top: 60px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #about-us {
+    margin-top: 70px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #about-us {
+    margin-top: 90px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #about-us {
+    margin-top: 110px;
+  }
+}
 #about-us .content {
   display: flex;
   flex-flow: column wrap;
@@ -1096,6 +1124,30 @@ main p {
 
 .testimonial {
   padding: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .testimonial {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .testimonial {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .testimonial {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .testimonial {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 .testimonial .icon-wrap {
   display: flex;
@@ -1154,6 +1206,17 @@ main p {
     margin-top: 30px;
   }
 }
+@media only screen and (min-width: 768px) {
+  .rara-sanchez {
+    padding: 15px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .rara-sanchez {
+    border-radius: 14px;
+    padding: 20px;
+  }
+}
 @media only screen and (min-width: 1200px) {
   .rara-sanchez {
     margin-top: 40px;
@@ -1162,11 +1225,17 @@ main p {
 @media only screen and (min-width: 1400px) {
   .rara-sanchez {
     margin-top: 47px;
+    border-radius: 24px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 @media only screen and (min-width: 1800px) {
   .rara-sanchez {
     margin-top: 58px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 28px;
   }
 }
 @media only screen and (min-width: 1920px) {
@@ -1174,52 +1243,42 @@ main p {
     margin-top: 60px;
   }
 }
-.rara-sanchez .s-btn {
+.rara-sanchez .l-btn {
   margin-top: -25px;
   margin-bottom: 15px;
 }
 @media only screen and (min-width: 768px) {
-  .rara-sanchez .s-btn {
+  .rara-sanchez .l-btn {
     margin-top: -29px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .rara-sanchez .s-btn {
+  .rara-sanchez .l-btn {
     margin-top: -35px;
     margin-bottom: 20px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .rara-sanchez .s-btn {
+  .rara-sanchez .l-btn {
     margin-top: -39px;
     margin-bottom: 20px;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .rara-sanchez .s-btn {
+  .rara-sanchez .l-btn {
     margin-top: -43px;
     margin-bottom: 20px;
   }
 }
 @media only screen and (min-width: 1800px) {
-  .rara-sanchez .s-btn {
+  .rara-sanchez .l-btn {
     margin-top: -46px;
     margin-bottom: 23px;
   }
 }
 @media only screen and (min-width: 1800px) {
-  .rara-sanchez .s-btn {
+  .rara-sanchez .l-btn {
     margin-top: -47px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .rara-sanchez {
-    padding: 15px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .rara-sanchez {
-    padding: 20px;
   }
 }
 .rara-sanchez p {
@@ -1264,6 +1323,78 @@ main p {
 .freelancer-wrap .arrow-wrap {
   display: flex;
   flex-flow: row wrap;
+  column-gap: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .freelancer-wrap .arrow-wrap {
+    column-gap: 12px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .freelancer-wrap .arrow-wrap {
+    column-gap: 15px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .freelancer-wrap .arrow-wrap {
+    column-gap: 17px;
+  }
+}
+.freelancer-wrap .arrow-wrap .r-shift, .freelancer-wrap .arrow-wrap .l-shift {
+  background-color: white;
+  font-size: 13px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (min-width: 576px) {
+  .freelancer-wrap .arrow-wrap .r-shift, .freelancer-wrap .arrow-wrap .l-shift {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .freelancer-wrap .arrow-wrap .r-shift, .freelancer-wrap .arrow-wrap .l-shift {
+    width: 42px;
+    height: 42px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .freelancer-wrap .arrow-wrap .r-shift, .freelancer-wrap .arrow-wrap .l-shift {
+    width: 43px;
+    height: 43px;
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .freelancer-wrap .arrow-wrap .r-shift, .freelancer-wrap .arrow-wrap .l-shift {
+    width: 45px;
+    height: 45px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .freelancer-wrap .arrow-wrap .r-shift, .freelancer-wrap .arrow-wrap .l-shift {
+    width: 48px;
+    height: 48px;
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .freelancer-wrap .arrow-wrap .r-shift, .freelancer-wrap .arrow-wrap .l-shift {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .freelancer-wrap .arrow-wrap .r-shift, .freelancer-wrap .arrow-wrap .l-shift {
+    width: 55px;
+    height: 55px;
+    font-size: 17px;
+  }
 }
 
 #foot-wrap {
