@@ -4,11 +4,11 @@
     line-height: $line-height;
 }
 
-@mixin px($top, $bottom) {
+@mixin py($top, $bottom) {
     padding-top: $top;
     padding-bottom: $bottom;
 }
-@mixin  py($left, $right) {
+@mixin  px($left, $right) {
     padding-left: $left;
     padding-right: $right;
 }

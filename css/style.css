@@ -53,6 +53,28 @@
   }
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Kanit", sans-serif;
+  box-sizing: border-box;
+}
+
+a, span, img {
+  display: inline-block;
+}
+
+.btn {
+  background: rgb(253, 212, 120);
+  background: linear-gradient(150deg, rgb(253, 212, 120) 0%, rgb(254, 181, 14) 100%);
+  padding: 12px 35px;
+  border-radius: 15px;
+  border: 5px solid rgba(255, 255, 255, 0.548);
+  color: #835c01;
+  font-size: 25px;
+  font-weight: 500;
+}
+
 .common-h2 {
   font-size: 26px;
 }
@@ -266,95 +288,6 @@ a {
   text-decoration: none;
 }
 
-.btn {
-  border: none;
-  background-color: #f9b62f;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-left: 12px;
-  padding-right: 12px;
-  border-radius: 9px;
-}
-@media only screen and (min-width: 576px) {
-  .btn {
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 13px;
-    padding-right: 13px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .btn {
-    padding-top: 9px;
-    padding-bottom: 9px;
-    padding-left: 14px;
-    padding-right: 14px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .btn {
-    border-radius: 10px;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  .btn {
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 12px;
-  }
-}
-@media only screen and (min-width: 1800px) {
-  .btn {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 17px;
-    padding-right: 17px;
-  }
-}
-@media only screen and (min-width: 1920px) {
-  .btn {
-    padding-top: 11px;
-    padding-bottom: 11px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-.btn a {
-  font-size: 18px;
-  font-weight: 500;
-  color: #7b5500;
-}
-@media only screen and (min-width: 768px) {
-  .btn a {
-    font-size: 20px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .btn a {
-    font-size: 21px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .btn a {
-    font-size: 22px;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  .btn a {
-    font-size: 23px;
-  }
-}
-@media only screen and (min-width: 1800px) {
-  .btn a {
-    font-size: 24px;
-  }
-}
-@media only screen and (min-width: 1920px) {
-  .btn a {
-    font-size: 25px;
-  }
-}
-
 .l-btn {
   height: 45px;
   width: 44px;
@@ -529,27 +462,29 @@ a {
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Kanit", sans-serif;
-}
-
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 @media only screen and (min-width: 425px) {
   .container {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 @media only screen and (min-width: 576px) {
   .container {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
+}
+
+#main-wrap {
+  background-color: #9356fb;
+}
+#main-wrap header {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .topber {
@@ -557,17 +492,6 @@ a {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
-}
-@media only screen and (min-width: 768px) {
-  .topber {
-    margin-top: 25px;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  .topber {
-    margin-top: 30px;
-  }
 }
 .topber .top-btn {
   display: none;
@@ -942,8 +866,8 @@ main p {
 
 .cardset {
   background-image: linear-gradient(to left top, #9955de, #9356fb, #b389e3);
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -954,14 +878,14 @@ main p {
   .cardset {
     margin: 18px;
     border-radius: 28px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 @media only screen and (min-width: 768px) {
   .cardset {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -973,8 +897,8 @@ main p {
 @media only screen and (min-width: 1400px) {
   .cardset {
     border-radius: 50px;
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding-left: 45px;
+    padding-right: 45px;
   }
 }
 .cardset .card {
@@ -1141,10 +1065,10 @@ main p {
   flex-flow: column wrap;
   align-items: center;
   text-align: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   row-gap: 7px;
   border-radius: 35px;
 }
@@ -1183,8 +1107,8 @@ main p {
 }
 @media only screen and (min-width: 1200px) {
   #our-value .content .card:nth-child(1) {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -1250,10 +1174,10 @@ main p {
   }
 }
 #get-started .content {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin-left: 5px;
   margin-right: 5px;
   background-image: linear-gradient(to left top, #9955de, #9356fb, #b389e3);
@@ -1279,8 +1203,8 @@ main p {
     margin-right: 9px;
     outline: #f6eaf6 solid 18px;
     border-radius: 55px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
     row-gap: 10px;
   }
 }
@@ -1290,8 +1214,8 @@ main p {
     margin-right: 10px;
     outline: #f6eaf6 solid 20px;
     border-radius: 60px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
     row-gap: 15px;
   }
 }
@@ -1301,8 +1225,8 @@ main p {
     margin-right: 12px;
     outline: #f6eaf6 solid 24px;
     border-radius: 65px;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
     row-gap: 20px;
   }
 }
@@ -1312,8 +1236,8 @@ main p {
     margin-right: 15px;
     outline: #f6eaf6 solid 30px;
     border-radius: 70px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
     row-gap: px;
   }
 }
@@ -1396,26 +1320,26 @@ main p {
 }
 @media only screen and (min-width: 768px) {
   .testimonial {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 @media only screen and (min-width: 992px) {
   .testimonial {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 @media only screen and (min-width: 1400px) {
   .testimonial {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 @media only screen and (min-width: 1800px) {
   .testimonial {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 .testimonial .icon-wrap {
@@ -1495,15 +1419,15 @@ main p {
   .rara-sanchez {
     margin-top: 47px;
     border-radius: 24px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 @media only screen and (min-width: 1800px) {
   .rara-sanchez {
     margin-top: 58px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     border-radius: 28px;
   }
 }
@@ -1697,37 +1621,37 @@ main p {
 }
 
 #contact {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 @media only screen and (min-width: 576px) {
   #contact {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 @media only screen and (min-width: 992px) {
   #contact {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 @media only screen and (min-width: 1400px) {
   #contact {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 @media only screen and (min-width: 1800px) {
   #contact {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 @media only screen and (min-width: 1920px) {
   #contact {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
 }
 
@@ -1883,61 +1807,61 @@ footer .container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 @media only screen and (min-width: 425px) {
   footer .container {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 }
 @media only screen and (min-width: 576px) {
   footer .container {
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 @media only screen and (min-width: 768px) {
   footer .container {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 @media only screen and (min-width: 992px) {
   footer .container {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 @media only screen and (min-width: 1200px) {
   footer .container {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 @media only screen and (min-width: 1400px) {
   footer .container {
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 }
 @media only screen and (min-width: 1800px) {
   footer .container {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 @media only screen and (min-width: 1920px) {
   footer .container {
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding-left: 45px;
+    padding-right: 45px;
   }
 }
 
