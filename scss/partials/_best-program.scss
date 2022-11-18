@@ -6,7 +6,14 @@
     }
 }
 #best-program{
-    margin-top: 70px;
+    margin-top: 25px;
+
+    @include media($lg) {
+        margin-top: 50px;
+    }
+    @include media($mxl) {
+        margin-top: 70px;
+    }
 
     .content{
         display: flex;
@@ -26,6 +33,14 @@
             
             h2{
                 color: $purple99;
+                font-size: 25px;
+
+                @include media($lg) {
+                    font-size: 35px;
+                }
+                @include media($mxl) {
+                    font-size: 50px;
+                }
             }
         }
         div:last-child{

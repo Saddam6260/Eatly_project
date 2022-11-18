@@ -876,7 +876,17 @@ main p {
 }
 
 #best-program {
-  margin-top: 70px;
+  margin-top: 25px;
+}
+@media only screen and (min-width: 992px) {
+  #best-program {
+    margin-top: 50px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #best-program {
+    margin-top: 70px;
+  }
 }
 #best-program .content {
   display: flex;
@@ -896,6 +906,17 @@ main p {
 }
 #best-program .content div:first-child h2 {
   color: #6a5399;
+  font-size: 25px;
+}
+@media only screen and (min-width: 992px) {
+  #best-program .content div:first-child h2 {
+    font-size: 35px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #best-program .content div:first-child h2 {
+    font-size: 50px;
+  }
 }
 #best-program .content div:last-child {
   display: flex;
