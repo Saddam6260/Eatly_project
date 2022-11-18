@@ -6,7 +6,9 @@
 
 .container{
     @include px(18px, 18px);
-
+    @include media ($xs) {
+        @include px(0px, 0px);
+    }
     @include media($xs) {
         @include py(10px, 10px);
     }
