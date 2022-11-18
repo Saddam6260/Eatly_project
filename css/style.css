@@ -480,7 +480,9 @@ a {
 }
 
 #main-wrap {
-  background-color: #9356fb;
+  background: rgb(200, 173, 246);
+  background: rgb(200, 173, 246);
+  background: linear-gradient(130deg, rgb(200, 173, 246) 0%, rgb(137, 71, 243) 33%, rgb(137, 71, 243) 37%, rgb(137, 71, 243) 45%, rgb(250, 150, 129) 86%, rgb(255, 255, 255) 100%);
 }
 #main-wrap header {
   padding-top: 50px;

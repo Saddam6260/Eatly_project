@@ -1,8 +1,18 @@
-
 #main-wrap {
-    background-color: $purplefbd;
+    // background-color: $purplefbd;
+    background: rgb(200, 173, 246);
+    background: rgb(200, 173, 246);
+    background: linear-gradient(
+        130deg,
+        rgba(200, 173, 246, 1) 0%,
+        rgba(137, 71, 243, 1) 33%,
+        rgba(137, 71, 243, 1) 37%,
+        rgba(137, 71, 243, 1) 45%,
+        rgba(250, 150, 129, 1) 86%,
+        rgba(255, 255, 255, 1) 100%
+    );
     header {
-       @include py(50px, 50px);
+        @include py(50px, 50px);
     }
 }
 
@@ -11,14 +21,14 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    .top-btn{
+    .top-btn {
         display: none;
 
         @include media($md) {
             display: block;
         }
     }
-    .show-btn{
+    .show-btn {
         font-size: 19px;
 
         @include media($sm) {
@@ -28,9 +38,8 @@
             display: none;
         }
     }
-
 }
-.top-logo{
+.top-logo {
     display: flex;
     align-items: center;
     column-gap: 3px;
@@ -39,7 +48,7 @@
         column-gap: 4px;
     }
 
-    img{
+    img {
         width: 17px;
         height: 19px;
 
@@ -65,17 +74,17 @@
             width: 25px;
         }
     }
-    h2{
+    h2 {
         color: $orange2f;
     }
 }
-.menu{
+.menu {
     display: none;
 
     @include media($md) {
         display: block;
     }
-    ul{
+    ul {
         display: flex;
         column-gap: 20px;
 
@@ -99,14 +108,14 @@
 
 // Main section
 
-main{
+main {
     text-align: center;
 
     @include media($md) {
         text-align: start;
     }
 
-    h1{
+    h1 {
         font-size: 40px;
         display: flex;
         flex-flow: column wrap;
@@ -142,11 +151,11 @@ main{
             line-height: 110px;
         }
 
-        .eating{
+        .eating {
             color: $orange2f;
         }
     }
-    p{
+    p {
         font-size: 19px;
         font-weight: 400;
         color: $purplefc;
@@ -179,7 +188,7 @@ main{
     }
 }
 
-.bw-wrap{
+.bw-wrap {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -202,7 +211,7 @@ main{
         column-gap: 45px;
     }
 
-    .watch-wrap{
+    .watch-wrap {
         display: flex;
         align-items: center;
         column-gap: 7px;
@@ -211,14 +220,14 @@ main{
             column-gap: 8px;
         }
 
-        .watch{
+        .watch {
             background-color: blue;
             color: $orange2f;
         }
-        h4{
+        h4 {
             font-weight: 600;
             font-size: 19px;
-    
+
             @include media($sm) {
                 font-size: 20px;
             }
