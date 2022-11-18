@@ -17,12 +17,18 @@ a, span, img {
         rgba(253, 212, 120, 1) 0%,
         rgba(254, 181, 14, 1) 100%
     );
-    padding: 12px 35px;
-    border-radius: 15px;
-    border: 5px solid rgba(255, 255, 255, 0.548);
     color: #835c01;
-    font-size: 25px;
+    border: 3px solid rgba(255, 255, 255, 0.548);
     font-weight: 500;
+    padding: 10px 14px;
+    font-size: 16px;
+    border-radius: 10px;
+    @include media ($xl) {
+        border-radius: 15px;
+        padding: 12px 35px;
+        font-size: 25px;
+        border-width: 5px;
+    }
 }
 
 .common-h2 {

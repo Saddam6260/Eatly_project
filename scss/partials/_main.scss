@@ -12,7 +12,10 @@
         rgba(255, 255, 255, 1) 100%
     );
     header {
-        @include py(50px, 50px);
+        @include py(15px, 15px);
+        @include media($xl) {
+            @include py(50px, 50px);
+        }
     }
 }
 
@@ -21,87 +24,107 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    .top-btn {
-        display: none;
+    .logo {
+        display: flex;
+        align-items: center;
+        column-gap: 3px;
+        order: 1;
 
+        @include media($xs) {
+            column-gap: 4px;
+        }
+
+        img {
+            width: 17px;
+            height: 19px;
+
+            // @include media($sm) {
+            //     height: 20px;
+            // }
+            // @include media($md) {
+            //     height: 23px;
+            // }
+            // @include media($xl) {
+            //     height: 24px;
+            // }
+            // @include media($xxl) {
+            //     height: 27px;
+            //     width: 19px;
+            // }
+            // @include media($mxl) {
+            //     height: 32px;
+            //     width: 22px;
+            // }
+            // @include media($lxl) {
+            //     height: 34px;
+            //     width: 25px;
+            // }
+        }
+        h2 {
+            color: $orange2f;
+        }
+    }
+    .menu-wrap {
+        order: 3;
+        width: 100%;
+        background-color: rgba(250, 150, 129, 1);
+        border-radius: 10px;
+        padding: 15px;
+        text-align: right;
+        margin-top: 15px;
+    }
+    .menu {
+        // display: none;
+        color: white;
+        order: 3;
+        @include media($md) {
+            display: block;
+        }
+        ul {
+            // display: flex;
+            column-gap: 20px;
+            padding-right: 20px;
+            margin-top: 10px;
+            // text-align: center;
+            // @include media($lg) {
+            //     column-gap: 30px;
+            // }
+            // @include media($xl) {
+            //     column-gap: 40px;
+            // }
+            // @include media($xxl) {
+            //     column-gap: 50px;
+            // }
+            // @include media($mxl) {
+            //     column-gap: 80px;
+            // }
+            // @include media($lxl) {
+            //     column-gap: 110px;
+            // }
+            li {
+                a {
+                    color: white;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .top-btn {
+        // display: none;
+        order: 2;
         @include media($md) {
             display: block;
         }
     }
     .show-btn {
         font-size: 19px;
+        order: 2;
 
         @include media($sm) {
             font-size: 21px;
         }
         @include media($md) {
             display: none;
-        }
-    }
-}
-.top-logo {
-    display: flex;
-    align-items: center;
-    column-gap: 3px;
-
-    @include media($xs) {
-        column-gap: 4px;
-    }
-
-    img {
-        width: 17px;
-        height: 19px;
-
-        @include media($sm) {
-            height: 20px;
-        }
-        @include media($md) {
-            height: 23px;
-        }
-        @include media($xl) {
-            height: 24px;
-        }
-        @include media($xxl) {
-            height: 27px;
-            width: 19px;
-        }
-        @include media($mxl) {
-            height: 32px;
-            width: 22px;
-        }
-        @include media($lxl) {
-            height: 34px;
-            width: 25px;
-        }
-    }
-    h2 {
-        color: $orange2f;
-    }
-}
-.menu {
-    display: none;
-
-    @include media($md) {
-        display: block;
-    }
-    ul {
-        display: flex;
-        column-gap: 20px;
-
-        @include media($lg) {
-            column-gap: 30px;
-        }
-        @include media($xl) {
-            column-gap: 40px;
-        }
-        @include media($xxl) {
-            column-gap: 50px;
-        }
-        @include media($mxl) {
-            column-gap: 80px;
-        }
-        @include media($lxl) {
-            column-gap: 110px;
         }
     }
 }
