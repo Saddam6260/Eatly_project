@@ -68,7 +68,7 @@ a, span, img {
   background: rgb(253, 212, 120);
   background: linear-gradient(150deg, rgb(253, 212, 120) 0%, rgb(254, 181, 14) 100%);
   color: #835c01;
-  border: 3px solid rgba(255, 255, 255, 0.548);
+  border: 3px solid rgba(255, 255, 255, 0.4);
   font-weight: 500;
   padding: 10px 14px;
   font-size: 16px;
@@ -91,6 +91,7 @@ a, span, img {
 @media only screen and (min-width: 1800px) {
   .btn {
     font-size: 24px;
+    border-radius: 20px;
   }
 }
 

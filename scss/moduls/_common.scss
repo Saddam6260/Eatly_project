@@ -18,7 +18,7 @@ a, span, img {
         rgba(254, 181, 14, 1) 100%
     );
     color: #835c01;
-    border: 3px solid rgba(255, 255, 255, 0.548);
+    border: 3px solid rgba(255, 255, 255, 0.4);
     font-weight: 500;
     padding: 10px 14px;
     font-size: 16px;
@@ -36,6 +36,7 @@ a, span, img {
     }
     @include media ($mxl) {
         font-size: 24px;
+        border-radius: 20px;
     }
     
 }
