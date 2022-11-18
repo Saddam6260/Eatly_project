@@ -23,37 +23,46 @@ a, span, img {
     padding: 10px 14px;
     font-size: 16px;
     border-radius: 10px;
-    @include media ($xl) {
+    @include media ($lg) {
+        padding: 15px 30px;
+        border-radius: 12px;
+        font-size: 18px;
+    }
+    @include media ($xxl) {
+        font-size: 21px;
         border-radius: 15px;
-        padding: 12px 35px;
-        font-size: 25px;
+        // padding: 15px 35px;
         border-width: 5px;
     }
+    @include media ($mxl) {
+        font-size: 24px;
+    }
+    
 }
 
 .common-h2 {
     font-size: 26px;
-    @include media($sm) {
-        font-size: 28px;
-    }
-    @include media($md) {
-        font-size: 31px;
-    }
-    @include media($lg) {
-        font-size: 34px;
-    }
-    @include media($xl) {
-        font-size: 37px;
-    }
-    @include media($xxl) {
-        font-size: 41px;
-    }
-    @include media($mxl) {
-        font-size: 45px;
-    }
-    @include media($lxl) {
-        font-size: 48px;
-    }
+    // @include media($sm) {
+    //     font-size: 28px;
+    // }
+    // @include media($md) {
+    //     font-size: 31px;
+    // }
+    // @include media($lg) {
+    //     font-size: 34px;
+    // }
+    // @include media($xl) {
+    //     font-size: 37px;
+    // }
+    // @include media($xxl) {
+    //     font-size: 41px;
+    // }
+    // @include media($mxl) {
+    //     font-size: 45px;
+    // }
+    // @include media($lxl) {
+    //     font-size: 48px;
+    // }
 }
 .common-h3 {
     font-weight: 700;

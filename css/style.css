@@ -74,52 +74,28 @@ a, span, img {
   font-size: 16px;
   border-radius: 10px;
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 992px) {
   .btn {
+    padding: 15px 30px;
+    border-radius: 12px;
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .btn {
+    font-size: 21px;
     border-radius: 15px;
-    padding: 12px 35px;
-    font-size: 25px;
     border-width: 5px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .btn {
+    font-size: 24px;
   }
 }
 
 .common-h2 {
   font-size: 26px;
-}
-@media only screen and (min-width: 576px) {
-  .common-h2 {
-    font-size: 28px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .common-h2 {
-    font-size: 31px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .common-h2 {
-    font-size: 34px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .common-h2 {
-    font-size: 37px;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  .common-h2 {
-    font-size: 41px;
-  }
-}
-@media only screen and (min-width: 1800px) {
-  .common-h2 {
-    font-size: 45px;
-  }
-}
-@media only screen and (min-width: 1920px) {
-  .common-h2 {
-    font-size: 48px;
-  }
 }
 
 .common-h3 {
@@ -504,6 +480,12 @@ a {
 }
 @media only screen and (min-width: 1200px) {
   #main-wrap header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #main-wrap header {
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -533,11 +515,33 @@ a {
   }
 }
 .topber .logo img {
-  width: 17px;
-  height: 19px;
+  width: 15px;
+}
+@media only screen and (min-width: 992px) {
+  .topber .logo img {
+    width: 20px;
+    margin-right: 5px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .topber .logo img {
+    width: 25px;
+    margin-right: 10px;
+  }
 }
 .topber .logo h2 {
   color: #f9b62f;
+  font-size: 25px;
+}
+@media only screen and (min-width: 992px) {
+  .topber .logo h2 {
+    font-size: 35px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .topber .logo h2 {
+    font-size: 50px;
+  }
 }
 .topber .menu-wrap {
   order: 3;
@@ -552,6 +556,7 @@ a {
     overflow: initial;
     flex: 1;
     margin: 0;
+    height: initial;
   }
 }
 .topber .menu-wrap > div {
@@ -595,7 +600,22 @@ a {
 @media only screen and (min-width: 992px) {
   .topber .menu {
     order: 1;
-    margin-left: 220px;
+    margin-left: 190px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .topber .menu {
+    margin-left: 250px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .topber .menu {
+    margin-left: 320px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .topber .menu {
+    margin-left: 390px;
   }
 }
 .topber .menu ul {
@@ -611,9 +631,29 @@ a {
     display: flex;
   }
 }
+@media only screen and (min-width: 1800px) {
+  .topber .menu ul {
+    column-gap: 65px;
+  }
+}
 .topber .menu ul li a {
   color: white;
   font-size: 16px;
+}
+@media only screen and (min-width: 768px) {
+  .topber .menu ul li a {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .topber .menu ul li a {
+    font-size: 21px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .topber .menu ul li a {
+    font-size: 24px;
+  }
 }
 .topber .top-btn {
   order: 2;

@@ -14,6 +14,9 @@
     header {
         @include py(15px, 15px);
         @include media($xl) {
+            @include py(25px, 25px);
+        }
+        @include media($mxl) {
             @include py(50px, 50px);
         }
     }
@@ -24,7 +27,7 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    @include media ($lg) {
+    @include media($lg) {
         justify-content: initial;
         align-items: initial;
     }
@@ -39,8 +42,18 @@
         }
 
         img {
-            width: 17px;
-            height: 19px;
+            width: 15px;
+            @include media($lg) {
+                width: 20px;
+                margin-right: 5px;
+            }
+            @include media ($mxl) {
+                width: 25px;
+                margin-right: 10px;
+            }
+           
+            // width: 17px;
+            // height: 19px;
 
             // @include media($sm) {
             //     height: 20px;
@@ -66,6 +79,13 @@
         }
         h2 {
             color: $orange2f;
+            font-size: 25px;
+            @include media($lg) {
+                font-size: 35px;
+            }
+            @include media ($mxl) {
+                font-size: 50px;
+            }
         }
     }
     .menu-wrap {
@@ -79,6 +99,7 @@
             overflow: initial;
             flex: 1;
             margin: 0;
+            height: initial;
         }
         & > div {
             background-color: rgba(250, 150, 129, 1);
@@ -113,7 +134,16 @@
         }
         @include media($lg) {
             order: 1;
-            margin-left: 220px;
+            margin-left: 190px;
+        }
+        @include media($xl) {
+            margin-left: 250px;
+        }
+        @include media ($xxl) {
+            margin-left: 320px;
+        }
+        @include media ($mxl) {
+            margin-left: 390px;
         }
         ul {
             // display: flex;
@@ -125,7 +155,9 @@
                 padding-right: initial;
                 margin-top: initial;
                 display: flex;
-
+            }
+            @include media ($mxl) {
+                column-gap: 65px;
             }
             // text-align: center;
             // @include media($lg) {
@@ -147,6 +179,15 @@
                 a {
                     color: white;
                     font-size: 16px;
+                    @include media($md) {
+                        font-size: 18px;
+                    }
+                    @include media($xxl) {
+                        font-size: 21px;
+                    }
+                    @include media($mxl) {
+                        font-size: 24px;
+                    }
                 }
             }
         }
