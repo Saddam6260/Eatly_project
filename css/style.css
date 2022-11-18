@@ -515,6 +515,12 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+@media only screen and (min-width: 992px) {
+  .topber {
+    justify-content: initial;
+    align-items: initial;
+  }
+}
 .topber .logo {
   display: flex;
   align-items: center;
@@ -539,7 +545,14 @@ a {
   overflow-y: hidden;
   margin-top: 15px;
   height: 0px;
-  transition: height 0.6s;
+  transition: height 0.35s;
+}
+@media only screen and (min-width: 992px) {
+  .topber .menu-wrap {
+    overflow: initial;
+    flex: 1;
+    margin: 0;
+  }
 }
 .topber .menu-wrap > div {
   background-color: rgb(250, 150, 129);
@@ -547,8 +560,28 @@ a {
   padding: 15px;
   text-align: right;
 }
+@media only screen and (min-width: 992px) {
+  .topber .menu-wrap > div {
+    background-color: transparent;
+    padding: 0;
+    border-radius: initial;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 .topber .menu-wrap.active {
   height: 206px;
+}
+@media only screen and (min-width: 576px) {
+  .topber .menu-wrap.active {
+    height: 215px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .topber .menu-wrap.active {
+    height: initial;
+  }
 }
 .topber .menu {
   color: white;
@@ -559,10 +592,24 @@ a {
     display: block;
   }
 }
+@media only screen and (min-width: 992px) {
+  .topber .menu {
+    order: 1;
+    margin-left: 220px;
+  }
+}
 .topber .menu ul {
   column-gap: 20px;
   padding-right: 20px;
   margin-top: 10px;
+}
+@media only screen and (min-width: 992px) {
+  .topber .menu ul {
+    column-gap: 35px;
+    padding-right: initial;
+    margin-top: initial;
+    display: flex;
+  }
 }
 .topber .menu ul li a {
   color: white;
@@ -579,13 +626,10 @@ a {
 .topber .show-btn {
   font-size: 19px;
   order: 2;
+  color: #f9b62f;
+  font-size: 22px;
 }
-@media only screen and (min-width: 576px) {
-  .topber .show-btn {
-    font-size: 21px;
-  }
-}
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .topber .show-btn {
     display: none;
   }
