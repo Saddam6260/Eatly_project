@@ -2,7 +2,14 @@
     .container{
         display: flex;
         flex-flow: column wrap;
-        row-gap: 40px;
+        row-gap: 30px;
+
+        @include media($md) {
+            row-gap: 60px;
+        }
+        @include media($mxl) {
+            row-gap: 80px;
+        }
     }
 }
 #best-program{
@@ -19,7 +26,7 @@
         display: flex;
         flex-flow: column wrap;
         align-items: center;
-        row-gap: 20px;
+        row-gap: 15px;
 
         @include media($sm) {
             flex-flow: row wrap;
@@ -30,6 +37,37 @@
         div:first-child{
             display: flex;
             column-gap: 10px;
+            align-items: center;
+
+            @include media($lg) {
+                column-gap: 16px;
+            }
+            @include media($mxl) {
+                column-gap: 20px;
+            }
+
+            .l-icon{
+                width: 44px;
+                height: 45px;
+                background-image: linear-gradient(to bottom, #ae7de5, #8e67d3);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 14px;
+                font-size: 25px;
+                color: #ffdf97;
+
+                @include media($lg) {
+                    width: 53px;
+                    height: 54px;
+                    border-radius: 16px;
+                    font-size: 30px;
+                }
+                @include media($mxl) {
+                    width: 73px;
+                    height: 75px;
+                }
+            }
             
             h2{
                 color: $purple99;
@@ -63,8 +101,8 @@
     }
 }
 .healthy-card{
-    background-color: #f2e8f2;
-    border-radius: 20px;
+    background-color: #f6eaf8;
+    border-radius: 35px;
 
     @include media($sm) {
         border-radius: 30px;
@@ -78,37 +116,36 @@
 }
 .cardset {
     background-image: linear-gradient(to left top, $purplede, $purplefbd, #b389e3);
-    @include px(25px, 25px);
+    @include py(20px, 20px);
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    border-radius: 18px;
-    margin: 16px;
+    border-radius: 35px;
+    margin: 13px;
 
     @include media($sm) {
         margin: 18px;
         border-radius: 28px;
-        @include px(30px, 30px);
-    }
-    @include media($md) {
-        @include px(40px, 40px);
+        @include py(30px, 30px);
     }
     @include media($lg) {
+        @include py(40px, 40px);
         margin: 22px;
         border-radius: 37px;
     }
-    @include media($xxl) {
+    @include media($mxl) {
         border-radius: 50px;
-        @include px(45px, 45px);
+        @include py(50px, 50px);
     }
 
     .card{  
         display: flex;
         flex-flow: column wrap;
         align-items: center;
-        
-        @include media($sm) {
-            row-gap: 8px;
+        row-gap: 10px;
+
+        @include media($lg) {
+            row-gap: 13px;
         }
         
         .l-btn{
@@ -118,6 +155,7 @@
     
         h3{
             font-size: 20px;
+            font-weight: 400;
             color: white;
     
             @include media($sm) {

@@ -872,7 +872,17 @@ main p {
 #best-program .container {
   display: flex;
   flex-flow: column wrap;
-  row-gap: 40px;
+  row-gap: 30px;
+}
+@media only screen and (min-width: 768px) {
+  #best-program .container {
+    row-gap: 60px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #best-program .container {
+    row-gap: 80px;
+  }
 }
 
 #best-program {
@@ -892,7 +902,7 @@ main p {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  row-gap: 20px;
+  row-gap: 15px;
 }
 @media only screen and (min-width: 576px) {
   #best-program .content {
@@ -903,6 +913,42 @@ main p {
 #best-program .content div:first-child {
   display: flex;
   column-gap: 10px;
+  align-items: center;
+}
+@media only screen and (min-width: 992px) {
+  #best-program .content div:first-child {
+    column-gap: 16px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #best-program .content div:first-child {
+    column-gap: 20px;
+  }
+}
+#best-program .content div:first-child .l-icon {
+  width: 44px;
+  height: 45px;
+  background-image: linear-gradient(to bottom, #ae7de5, #8e67d3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  font-size: 25px;
+  color: #ffdf97;
+}
+@media only screen and (min-width: 992px) {
+  #best-program .content div:first-child .l-icon {
+    width: 53px;
+    height: 54px;
+    border-radius: 16px;
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #best-program .content div:first-child .l-icon {
+    width: 73px;
+    height: 75px;
+  }
 }
 #best-program .content div:first-child h2 {
   color: #6a5399;
@@ -938,8 +984,8 @@ main p {
 }
 
 .healthy-card {
-  background-color: #f2e8f2;
-  border-radius: 20px;
+  background-color: #f6eaf8;
+  border-radius: 35px;
 }
 @media only screen and (min-width: 576px) {
   .healthy-card {
@@ -959,49 +1005,46 @@ main p {
 
 .cardset {
   background-image: linear-gradient(to left top, #9955de, #9356fb, #b389e3);
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  border-radius: 18px;
-  margin: 16px;
+  border-radius: 35px;
+  margin: 13px;
 }
 @media only screen and (min-width: 576px) {
   .cardset {
     margin: 18px;
     border-radius: 28px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .cardset {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 @media only screen and (min-width: 992px) {
   .cardset {
+    padding-top: 40px;
+    padding-bottom: 40px;
     margin: 22px;
     border-radius: 37px;
   }
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1800px) {
   .cardset {
     border-radius: 50px;
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 .cardset .card {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+  row-gap: 10px;
 }
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 992px) {
   .cardset .card {
-    row-gap: 8px;
+    row-gap: 13px;
   }
 }
 .cardset .card .l-btn {
@@ -1010,6 +1053,7 @@ main p {
 }
 .cardset .card h3 {
   font-size: 20px;
+  font-weight: 400;
   color: white;
 }
 @media only screen and (min-width: 576px) {
