@@ -64,6 +64,32 @@ a, span, img {
   display: inline-block;
 }
 
+.l-icon {
+  width: 44px;
+  height: 45px;
+  background-image: linear-gradient(to bottom, #ae7de5, #8e67d3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  font-size: 25px;
+  color: #ffdf97;
+}
+@media only screen and (min-width: 992px) {
+  .l-icon {
+    width: 53px;
+    height: 54px;
+    border-radius: 16px;
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .l-icon {
+    width: 73px;
+    height: 75px;
+  }
+}
+
 .btn {
   background: rgb(253, 212, 120);
   background: linear-gradient(150deg, rgb(253, 212, 120) 0%, rgb(254, 181, 14) 100%);
@@ -965,20 +991,24 @@ main p {
 .healthy-card {
   background-color: #f6eaf8;
   border-radius: 35px;
+  padding: 13px;
 }
 @media only screen and (min-width: 576px) {
   .healthy-card {
     border-radius: 40px;
+    padding: 18px;
   }
 }
 @media only screen and (min-width: 992px) {
   .healthy-card {
     border-radius: 45px;
+    padding: 22px;
   }
 }
 @media only screen and (min-width: 1800px) {
   .healthy-card {
     border-radius: 70px;
+    padding: 26px;
   }
 }
 
@@ -990,11 +1020,9 @@ main p {
   flex-flow: row wrap;
   justify-content: space-around;
   border-radius: 35px;
-  margin: 13px;
 }
 @media only screen and (min-width: 576px) {
   .cardset {
-    margin: 18px;
     border-radius: 40px;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -1004,7 +1032,6 @@ main p {
   .cardset {
     padding-top: 40px;
     padding-bottom: 40px;
-    margin: 22px;
     border-radius: 45px;
   }
 }
@@ -1319,11 +1346,6 @@ main p {
 #get-started {
   margin-top: 40px;
 }
-@media only screen and (min-width: 576px) {
-  #get-started {
-    margin-top: 50px;
-  }
-}
 @media only screen and (min-width: 768px) {
   #get-started {
     margin-top: 60px;
@@ -1334,105 +1356,114 @@ main p {
     margin-top: 70px;
   }
 }
-@media only screen and (min-width: 1400px) {
-  #get-started {
-    margin-top: 90px;
-  }
-}
 @media only screen and (min-width: 1800px) {
   #get-started {
     margin-top: 110px;
   }
 }
-#get-started .content {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
+#get-started .content-wrap {
+  background-color: #f6eaf8;
+  border-radius: 35px;
+  padding: 13px;
+}
+@media only screen and (min-width: 576px) {
+  #get-started .content-wrap {
+    border-radius: 40px;
+    padding: 18px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #get-started .content-wrap {
+    border-radius: 45px;
+    padding: 22px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #get-started .content-wrap {
+    border-radius: 70px;
+    padding: 26px 26px 26px 26px;
+  }
+}
+#get-started .content-wrap .content {
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-image: linear-gradient(to left top, #9955de, #9356fb, #b389e3);
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
   align-items: center;
-  outline: #f6eaf6 solid 10px;
   border-radius: 35px;
 }
 @media only screen and (min-width: 576px) {
-  #get-started .content {
-    margin-left: 7px;
-    margin-right: 7px;
-    outline: #f6eaf6 solid 14px;
-    border-radius: 45px;
+  #get-started .content-wrap .content {
+    border-radius: 40px;
     row-gap: 5px;
   }
 }
 @media only screen and (min-width: 992px) {
-  #get-started .content {
-    margin-left: 9px;
-    margin-right: 9px;
-    outline: #f6eaf6 solid 18px;
-    border-radius: 55px;
-    padding-left: 40px;
-    padding-right: 40px;
+  #get-started .content-wrap .content {
+    border-radius: 45px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     row-gap: 10px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  #get-started .content {
-    margin-left: 10px;
-    margin-right: 10px;
-    outline: #f6eaf6 solid 20px;
-    border-radius: 60px;
-    padding-left: 50px;
-    padding-right: 50px;
+  #get-started .content-wrap .content {
+    padding-top: 50px;
+    padding-bottom: 50px;
     row-gap: 15px;
   }
 }
 @media only screen and (min-width: 1400px) {
-  #get-started .content {
-    margin-left: 12px;
-    margin-right: 12px;
-    outline: #f6eaf6 solid 24px;
+  #get-started .content-wrap .content {
     border-radius: 65px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     row-gap: 20px;
   }
 }
 @media only screen and (min-width: 1800px) {
-  #get-started .content {
-    margin-left: 15px;
-    margin-right: 15px;
-    outline: #f6eaf6 solid 30px;
+  #get-started .content-wrap .content {
     border-radius: 70px;
-    padding-left: 80px;
-    padding-right: 80px;
-    row-gap: px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
-#get-started .content .l-btn {
+#get-started .content-wrap .content .l-btn {
   border: 3px solid #d0a9fc;
   background-color: #6a5399;
 }
-#get-started .content h2 {
+#get-started .content-wrap .content h2 {
   color: white;
+  font-size: 25px;
 }
-#get-started .content h2 span {
+@media only screen and (min-width: 992px) {
+  #get-started .content-wrap .content h2 {
+    font-size: 35px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #get-started .content-wrap .content h2 {
+    font-size: 50px;
+  }
+}
+#get-started .content-wrap .content h2 span {
   color: #f9b62f;
 }
-#get-started .content p {
+#get-started .content-wrap .content p {
   display: block;
   text-align: center;
   color: #d0a9fc;
 }
 @media only screen and (min-width: 576px) {
-  #get-started .content p {
+  #get-started .content-wrap .content p {
     display: flex;
   }
 }
-#get-started .content .btn {
+#get-started .content-wrap .content p span {
+  display: initial;
+}
+#get-started .content-wrap .content .btn {
   margin-top: 10px;
   border: 3px solid #d0a9fc;
 }
@@ -1473,12 +1504,20 @@ main p {
   #about-us .content {
     flex-flow: row wrap;
     justify-content: space-between;
+    align-items: center;
   }
 }
+#about-us .content .img {
+  text-align: center;
+  width: 100%;
+}
 @media only screen and (min-width: 768px) {
-  #about-us .content .img-wrap {
+  #about-us .content .img {
     width: 50%;
   }
+}
+#about-us .content .img img {
+  width: 80%;
 }
 @media only screen and (min-width: 768px) {
   #about-us .content .content-wrap {
@@ -1487,30 +1526,41 @@ main p {
 }
 
 .testimonial {
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   .testimonial {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 25px;
   }
 }
 @media only screen and (min-width: 992px) {
   .testimonial {
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 30px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .testimonial {
+    padding-left: 30px;
   }
 }
 @media only screen and (min-width: 1400px) {
   .testimonial {
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: 40px;
   }
 }
 @media only screen and (min-width: 1800px) {
   .testimonial {
     padding-top: 40px;
     padding-bottom: 40px;
+    padding-left: 45px;
+    padding-right: 45px;
   }
 }
 .testimonial .icon-wrap {
@@ -1551,47 +1601,63 @@ main p {
 }
 .testimonial .icon-wrap h2 {
   color: #6a5399;
+  font-size: 25px;
+}
+@media only screen and (min-width: 992px) {
+  .testimonial .icon-wrap h2 {
+    font-size: 35px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .testimonial .icon-wrap h2 {
+    font-size: 50px;
+  }
 }
 .testimonial p {
   text-align: justify;
-  display: block;
   margin-top: 10px;
   color: #9188a3;
+}
+.testimonial p span {
+  display: initial;
 }
 
 .rara-sanchez {
   background-color: #e8e3ea;
   padding: 10px;
-  border-radius: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 15px;
   margin-top: 25px;
 }
 @media only screen and (min-width: 576px) {
   .rara-sanchez {
     margin-top: 30px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .rara-sanchez {
-    padding: 15px;
+    padding: 25px;
+    border-radius: 40px;
   }
 }
 @media only screen and (min-width: 992px) {
   .rara-sanchez {
-    border-radius: 14px;
+    border-radius: 45px;
     padding: 20px;
+    padding-left: 30px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .rara-sanchez {
     margin-top: 40px;
+    padding-left: 30px;
   }
 }
 @media only screen and (min-width: 1400px) {
   .rara-sanchez {
     margin-top: 47px;
-    border-radius: 24px;
+    border-radius: 50px;
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 @media only screen and (min-width: 1800px) {
@@ -1599,7 +1665,9 @@ main p {
     margin-top: 58px;
     padding-top: 40px;
     padding-bottom: 40px;
-    border-radius: 28px;
+    border-radius: 50px;
+    padding-left: 45px;
+    padding-right: 45px;
   }
 }
 @media only screen and (min-width: 1920px) {
@@ -1607,48 +1675,39 @@ main p {
     margin-top: 60px;
   }
 }
-.rara-sanchez .l-btn {
-  margin-top: -25px;
-  margin-bottom: 15px;
+.rara-sanchez .l-icon {
+  margin-top: -28px;
 }
-@media only screen and (min-width: 768px) {
-  .rara-sanchez .l-btn {
-    margin-top: -29px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .rara-sanchez .l-btn {
-    margin-top: -35px;
-    margin-bottom: 20px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .rara-sanchez .l-btn {
-    margin-top: -39px;
-    margin-bottom: 20px;
+@media only screen and (min-width: 576px) {
+  .rara-sanchez .l-icon {
+    margin-top: -45px;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .rara-sanchez .l-btn {
-    margin-top: -43px;
-    margin-bottom: 20px;
+  .rara-sanchez .l-icon {
+    margin-top: -52px;
   }
 }
 @media only screen and (min-width: 1800px) {
-  .rara-sanchez .l-btn {
-    margin-top: -46px;
-    margin-bottom: 23px;
-  }
-}
-@media only screen and (min-width: 1800px) {
-  .rara-sanchez .l-btn {
-    margin-top: -47px;
+  .rara-sanchez .l-icon {
+    margin-top: -70px;
   }
 }
 .rara-sanchez p {
   font-style: italic;
   font-weight: 600;
   color: #9188a3;
+  margin-top: 10px;
+}
+@media only screen and (min-width: 576px) {
+  .rara-sanchez p {
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .rara-sanchez p {
+    margin-top: 30px;
+  }
 }
 .rara-sanchez h3 {
   color: #9356fb;
@@ -1680,6 +1739,12 @@ main p {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 1200px) {
+  .freelancer-wrap {
+    margin-bottom: 20px;
+  }
 }
 .freelancer-wrap p {
   font-style: normal;

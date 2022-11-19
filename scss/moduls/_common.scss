@@ -9,7 +9,28 @@
 a, span, img {
     display: inline-block;
 }
+.l-icon{
+    width: 44px;
+    height: 45px;
+    background-image: linear-gradient(to bottom, #ae7de5, #8e67d3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+    font-size: 25px;
+    color: #ffdf97;
 
+    @include media($lg) {
+        width: 53px;
+        height: 54px;
+        border-radius: 16px;
+        font-size: 30px;
+    }
+    @include media($mxl) {
+        width: 73px;
+        height: 75px;
+    }
+}
 .btn {
     background: rgb(253, 212, 120);
     background: linear-gradient(

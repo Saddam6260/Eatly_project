@@ -108,15 +108,19 @@
 .healthy-card{
     background-color: #f6eaf8;
     border-radius: 35px;
+    padding: 13px;
 
     @include media($sm) {
         border-radius: 40px;
+        padding: 18px;
     }
     @include media($lg) {
         border-radius: 45px;
+        padding: 22px;
     }
     @include media($mxl) {
         border-radius: 70px;
+        padding: 26px;
     }
 }
 .cardset {
@@ -126,16 +130,13 @@
     flex-flow: row wrap;
     justify-content: space-around;
     border-radius: 35px;
-    margin: 13px;
 
     @include media($sm) {
-        margin: 18px;
         border-radius: 40px;
         @include py(30px, 30px);
     }
     @include media($lg) {
         @include py(40px, 40px);
-        margin: 22px;
         border-radius: 45px;
     }
     @include media($mxl) {

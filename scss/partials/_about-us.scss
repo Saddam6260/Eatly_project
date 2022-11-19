@@ -24,11 +24,17 @@
         @include media($md) {
             flex-flow: row wrap;
             justify-content: space-between;
+            align-items: center;
         }
 
-        .img-wrap{
+        .img{
+            text-align: center;
+            width: 100%;
             @include media($md) {
                 width: 50%;
+            }
+            img{
+                width: 80%;
             }
         }
         .content-wrap{
@@ -40,19 +46,27 @@
 } 
 
 .testimonial {
-    padding: 10px;
+    @include py(10px, 10px);
+    padding-left: 20px;
+    padding-right: 20px;
 
-    @include media($md) {
-        @include py(15px, 15px);
+    @include media($sm) {
+        padding: 25px;
     }
     @include media($lg) {
         @include py(20px, 20px);
+        padding-left: 30px;
+    }
+    @include media($xl) {
+        padding-left: 30px;
     }
     @include media($xxl) {
         @include py(30px, 30px);
+        padding-left: 40px;
     }
     @include media($mxl) {
         @include py(40px, 40px);
+        @include px(45px, 45px);
     }
     .icon-wrap{
         display: flex;
@@ -82,74 +96,76 @@
 
         h2{
             color: $purple99;
+            font-size: 25px;
+
+            @include media($lg) {
+                font-size: 35px;
+            }
+            @include media($mxl) {
+                font-size: 50px;
+            }
         }
     }
     p{
         text-align: justify;
-        display: block;
         margin-top: 10px;
         color: $graya3;
+
+        span{
+            display: initial;
+        }
     }
 }
 
 .rara-sanchez{
     background-color: $purpleea;
     padding: 10px;
-    border-radius: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
     margin-top: 25px;
 
     @include media($sm) {
         margin-top: 30px;
-    }
-    @include media($md) {
-        padding: 15px;
+        padding: 25px;
+        border-radius: 40px;
     }
     @include media($lg) {
-        border-radius: 14px;
+        border-radius: 45px;
         padding: 20px;
+        padding-left: 30px;
     }
     @include media($xl) {
         margin-top: 40px;
+        padding-left: 30px;
     }
     @include media($xxl) {
         margin-top: 47px;
-        border-radius: 24px;
+        border-radius: 50px;
         @include py(30px, 30px);
+        @include px(40px, 40px);
     }
     @include media($mxl) {
         margin-top: 58px;
         @include py(40px, 40px);
-        border-radius: 28px;
+        border-radius: 50px;
+        @include px(45px, 45px);
     }
     @include media($lxl) {
         margin-top: 60px;
     }
 
-    .l-btn{
-        margin-top: -25px;
-        margin-bottom: 15px;
+    .l-icon{
+        margin-top: -28px;
 
-        @include media($md) {
-            margin-top: -29px;
-        }
-        @include media($lg) {
-            margin-top: -35px;
-            margin-bottom: 20px;
-        }
-        @include media($xl) {
-            margin-top: -39px;
-            margin-bottom: 20px;
+        @include media($sm) {
+            margin-top: -45px;
         }
         @include media($xxl) {
-            margin-top: -43px;
-            margin-bottom: 20px;
+            margin-top: -52px;
         }
         @include media($mxl) {
-            margin-top: -46px;
-            margin-bottom: 23px;
-        }
-        @include media($mxl) {
-            margin-top: -47px;
+            margin-top: -70px;
         }
     }
 
@@ -157,6 +173,14 @@
         font-style: italic;
         font-weight: 600;
         color: $graya3;
+        margin-top: 10px;
+
+        @include media($sm) {
+            margin-top: 20px;
+        }
+        @include media($xl) {
+            margin-top: 30px;
+        }
     }
     h3{
         color: $purplefbd;
@@ -182,6 +206,11 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
+
+    @include media($xl) {
+        margin-bottom: 20px;
+    }
 
     p{
         font-style: normal;
