@@ -4,15 +4,11 @@
     @include media($sm) {
         margin-top: 50px;
     }
-    @include media($md) {
-        margin-top: 60px;
-    }
+
     @include media($lg) {
         margin-top: 70px;
     }
-    @include media($xxl) {
-        margin-top: 90px;
-    }
+
     @include media($mxl) {
         margin-top: 110px;
     }
@@ -28,17 +24,24 @@
     }
 
     .img{
-        width: 100%;
-
+        text-align: center;
         @include media($xl) {
             width: 50%;
+        }
+
+        img{
+            width: 80%;
+
+            @include media($xl) {
+                width: 70%;
+            }
         }
     }
     .content{
         width: 100%;
         display: grid;
         grid-template-columns: 1fr;
-        grid-row-gap: 25px;
+        grid-row-gap: 45px;
         grid-template-rows: auto auto auto auto auto;
         grid-template-areas: 'card1'
                             'card2'
@@ -71,25 +74,20 @@
             flex-flow: column wrap;
             align-items: center;
             text-align: center;
-            @include px(25px, 25px);
-            @include py(20px, 20px);
+            @include py(25px, 35px);
             row-gap: 7px;
-            border-radius: 35px;
+            border-radius: 45px;
 
             @include media($xl) {
                 align-items: start;
                 text-align: start;
             }
             .s-btn{
-                @include media($xl) {
-                    margin-top: -45px;
-                }
+                margin-top: -45px;
             }
             .common-h3{
                 color: $purple99;
-                @include media($xl) {
-                    margin-top: 15px;
-                }
+                margin-top: 14px;
             }
             p{
                 color: $graya3;
@@ -102,18 +100,10 @@
         
         .card:nth-child(1) {
             grid-area: card1;
-            margin-bottom: 20px;
             background-color: initial;
 
             @include media($xl) {
                 @include py(0px, 0px);
-            }
-
-            p{
-                @include media($xl) {
-                    display: flex;
-                    flex-flow: column wrap;
-                }
             }
 
             .head-wrap{
@@ -124,11 +114,16 @@
                 h2{
                     color: $purple99;
                 }
-
                 @include media($xl) {
                     align-items: start;
                     flex-flow: row wrap;
                     column-gap: 20px;
+                }
+            }
+            p{
+                text-align: start;
+                span{
+                    display: initial;
                 }
             }
         }

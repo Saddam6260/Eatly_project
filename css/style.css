@@ -989,17 +989,17 @@ main p {
 }
 @media only screen and (min-width: 576px) {
   .healthy-card {
-    border-radius: 30px;
+    border-radius: 40px;
   }
 }
 @media only screen and (min-width: 992px) {
   .healthy-card {
-    border-radius: 39px;
+    border-radius: 45px;
   }
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1800px) {
   .healthy-card {
-    border-radius: 50px;
+    border-radius: 70px;
   }
 }
 
@@ -1016,7 +1016,7 @@ main p {
 @media only screen and (min-width: 576px) {
   .cardset {
     margin: 18px;
-    border-radius: 28px;
+    border-radius: 40px;
     padding-top: 30px;
     padding-bottom: 30px;
   }
@@ -1026,12 +1026,12 @@ main p {
     padding-top: 40px;
     padding-bottom: 40px;
     margin: 22px;
-    border-radius: 37px;
+    border-radius: 45px;
   }
 }
 @media only screen and (min-width: 1800px) {
   .cardset {
-    border-radius: 50px;
+    border-radius: 70px;
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -1127,19 +1127,9 @@ main p {
     margin-top: 50px;
   }
 }
-@media only screen and (min-width: 768px) {
-  #our-value {
-    margin-top: 60px;
-  }
-}
 @media only screen and (min-width: 992px) {
   #our-value {
     margin-top: 70px;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  #our-value {
-    margin-top: 90px;
   }
 }
 @media only screen and (min-width: 1800px) {
@@ -1159,18 +1149,26 @@ main p {
   }
 }
 #our-value .img {
-  width: 100%;
+  text-align: center;
 }
 @media only screen and (min-width: 1200px) {
   #our-value .img {
     width: 50%;
   }
 }
+#our-value .img img {
+  width: 80%;
+}
+@media only screen and (min-width: 1200px) {
+  #our-value .img img {
+    width: 70%;
+  }
+}
 #our-value .content {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-row-gap: 25px;
+  grid-row-gap: 45px;
   grid-template-rows: auto auto auto auto auto;
   grid-template-areas: "card1" "card2" "card3" "card4" "card5";
 }
@@ -1202,12 +1200,10 @@ main p {
   flex-flow: column wrap;
   align-items: center;
   text-align: center;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 25px;
+  padding-bottom: 35px;
   row-gap: 7px;
-  border-radius: 35px;
+  border-radius: 45px;
 }
 @media only screen and (min-width: 1200px) {
   #our-value .content .card {
@@ -1215,18 +1211,12 @@ main p {
     text-align: start;
   }
 }
-@media only screen and (min-width: 1200px) {
-  #our-value .content .card .s-btn {
-    margin-top: -45px;
-  }
+#our-value .content .card .s-btn {
+  margin-top: -45px;
 }
 #our-value .content .card .common-h3 {
   color: #6a5399;
-}
-@media only screen and (min-width: 1200px) {
-  #our-value .content .card .common-h3 {
-    margin-top: 15px;
-  }
+  margin-top: 14px;
 }
 #our-value .content .card p {
   color: #9188a3;
@@ -1239,19 +1229,12 @@ main p {
 }
 #our-value .content .card:nth-child(1) {
   grid-area: card1;
-  margin-bottom: 20px;
   background-color: initial;
 }
 @media only screen and (min-width: 1200px) {
   #our-value .content .card:nth-child(1) {
     padding-top: 0px;
     padding-bottom: 0px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  #our-value .content .card:nth-child(1) p {
-    display: flex;
-    flex-flow: column wrap;
   }
 }
 #our-value .content .card:nth-child(1) .head-wrap {
@@ -1268,6 +1251,12 @@ main p {
     flex-flow: row wrap;
     column-gap: 20px;
   }
+}
+#our-value .content .card:nth-child(1) p {
+  text-align: start;
+}
+#our-value .content .card:nth-child(1) p span {
+  display: initial;
 }
 #our-value .content .card:nth-child(2) {
   grid-area: card2;

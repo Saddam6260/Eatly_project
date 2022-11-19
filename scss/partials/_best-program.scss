@@ -105,13 +105,13 @@
     border-radius: 35px;
 
     @include media($sm) {
-        border-radius: 30px;
+        border-radius: 40px;
     }
     @include media($lg) {
-        border-radius: 39px;
+        border-radius: 45px;
     }
-    @include media($xxl) {
-        border-radius: 50px;
+    @include media($mxl) {
+        border-radius: 70px;
     }
 }
 .cardset {
@@ -125,16 +125,16 @@
 
     @include media($sm) {
         margin: 18px;
-        border-radius: 28px;
+        border-radius: 40px;
         @include py(30px, 30px);
     }
     @include media($lg) {
         @include py(40px, 40px);
         margin: 22px;
-        border-radius: 37px;
+        border-radius: 45px;
     }
     @include media($mxl) {
-        border-radius: 50px;
+        border-radius: 70px;
         @include py(50px, 50px);
     }
 
