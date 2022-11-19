@@ -287,51 +287,43 @@ a {
         font-size: 40px;
     }
 }
-.s-btn {
-    height: 41px;
-    width: 41px;
+.s-icon {
+    height: 50px;
+    width: 49px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: $purplefb;
     color: $orange32;
-    font-size: 21px;
+    font-size: 24px;
     border-radius: 14px;
 
-    @include media($md) {
-        width: 44px;
-        height: 44px;
-        border-radius: 15px;
-    }
+    // @include media($md) {
+    //     border-radius: 15px;
+    // }
+    // @include media($lg) {
+    //     width: 47px;
+    //     height: 47px;
+    //     border-radius: 16px;
+    //     font-size: 23px;
+    // }
+    // @include media($xl) {
+    //     width: 50px;
+    //     height: 50px;
+    //     border-radius: 16px;
+    //     font-size: 25px;
+    // }
     @include media($lg) {
-        width: 47px;
-        height: 47px;
-        border-radius: 16px;
-        font-size: 23px;
-    }
-    @include media($xl) {
-        width: 50px;
-        height: 50px;
-        border-radius: 16px;
-        font-size: 25px;
-    }
-    @include media($xxl) {
-        width: 53px;
-        height: 53px;
+        width: 57px;
+        height: 58px;
         border-radius: 18px;
         font-size: 27px;
     }
     @include media($mxl) {
-        width: 56px;
-        height: 56px;
+        width: 65px;
+        height: 66px;
         border-radius: 20px;
         font-size: 30px;
-    }
-    @include media($lxl) {
-        width: 60px;
-        height: 60px;
-        border-radius: 23px;
-        font-size: 33px;
     }
 }
 

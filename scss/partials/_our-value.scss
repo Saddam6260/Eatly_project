@@ -81,9 +81,17 @@
             @include media($xl) {
                 align-items: start;
                 text-align: start;
+                padding-left: 25px;
             }
-            .s-btn{
+            @include media($mxl) {
+                padding-left: 35px;
+            }
+            .s-icon{
                 margin-top: -45px;
+
+                @include media($mxl) {
+                    margin-top: -50px;
+                }
             }
             .common-h3{
                 color: $purple99;
@@ -92,8 +100,8 @@
             p{
                 color: $graya3;
                 @include media($xl) {
-                    align-items: start;
                     margin-bottom: 10px;
+                    align-items: start;
                 }
             }
         }
@@ -102,26 +110,71 @@
             grid-area: card1;
             background-color: initial;
 
-            @include media($xl) {
-                @include py(0px, 0px);
+            @include media($sm) {
+                column-gap: 12px
             }
-
+            @include media($xl) {
+                row-gap: 18px;
+                @include py(0px, 0px);
+                margin-bottom: 20px;
+            } 
+            @include media($mxl) {
+                row-gap: 22px;
+                margin-bottom: 30px;
+            }
             .head-wrap{
                 display: flex;
                 flex-flow: column wrap;
                 align-items: center;
 
+                .l-icon{
+                    width: 53px;
+                    height: 54px;
+                    background-image: linear-gradient(to bottom, #ae7de5, #8e67d3);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 14px;
+                    font-size: 27px;
+                    color: #ffdf97;
+    
+                    @include media($lg) {
+                        border-radius: 16px;
+                        font-size: 30px;
+                        width: 62px;
+                        height: 63px;
+                    }
+                    @include media($mxl) {
+                        width: 73px;
+                        height: 75px;
+                    }
+                }
+
                 h2{
                     color: $purple99;
+                    font-size: 25px;
+
+                    @include media($lg) {
+                        font-size: 35px;
+                    }
+                    @include media($mxl) {
+                        font-size: 50px;
+                    }
                 }
                 @include media($xl) {
-                    align-items: start;
+                    align-items: center;
                     flex-flow: row wrap;
                     column-gap: 20px;
                 }
             }
             p{
-                text-align: start;
+                text-align: center;
+
+                @include media($sm) {
+                    display: flex;
+                    flex-flow: column wrap;
+
+                }
                 span{
                     display: initial;
                 }
