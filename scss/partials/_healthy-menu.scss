@@ -1,0 +1,179 @@
+#healthy-menu{
+    margin-top: 40px;
+
+    @include media($md) {
+        margin-top: 60px;
+    }
+    @include media($lg) {
+        margin-top: 70px;
+    }
+    @include media($mxl) {
+        margin-top: 110px;
+    }
+
+    .content-wrap {
+
+        display: flex;
+        flex-flow: column wrap;
+
+        .content{
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+
+            @include media($md) {
+                align-items: start;
+            }
+            .head-wrap{
+                display: flex;
+                flex-flow: column wrap;
+                align-items: center;
+                row-gap: 7px;
+
+                @include media($md) {
+                    flex-flow: row wrap;
+                    align-items: start;
+                    column-gap: 20px;
+                }
+                @include media($lg) {
+                    column-gap: 13px;
+                }
+                @include media($mxl) {
+                    column-gap: 25  px;
+                }
+
+                h1{
+                    color: $purple99;
+                    font-size: 25px;
+
+                    @include media($lg) {
+                        font-size: 35px;
+                    }
+                    @include media($mxl) {
+                        font-size: 50px;
+                    }
+                }
+            }
+            .arrow-wrap{
+                width: 100%;
+                display: flex;
+                flex-flow: column wrap;
+                margin-top: 10px;
+
+                @include media($md) {
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                }
+
+                p{
+                    text-align: center;
+                    color: $graya3;
+
+                    @include media($sm) {
+                        display: flex;
+                        flex-flow: column wrap;
+                    }
+                    @include media($md) {
+                        text-align: start;
+                    }
+                    span{
+                        display: initial;
+                    }
+                }
+                div{
+                    display: flex;
+                    column-gap: 10px;
+                    justify-content: center;
+                    margin-top: 10px;
+
+                    @include media($md) {
+                        margin-top: 0px;
+                    }
+
+                    @include media($lg) {
+                        column-gap: 13px;
+                    }
+                    @include media($lxl) {
+                        column-gap: 17px;
+                    }
+                    .arrow{
+                        border: 3px solid $purpleea;
+                        color: $purplefb;
+                    }
+                }
+            }
+        }
+
+        .recipy-cetagory{
+            display: flex;
+            flex-flow: column wrap;
+            row-gap: 20px;
+            margin-top: 40px;
+
+            .content{
+                padding-top: 20px;
+                padding-bottom: 20px;
+                border-radius: 20px;
+                display: flex;
+                column-gap: 10px;
+                flex-flow: row wrap;
+                padding-left: 15px;
+                background-color: #f9f1fe;
+                
+                h3{
+                    color: $purple99;
+                }
+            }
+
+
+        }
+        .card-wrap{
+
+            .recipy-card{
+                display: flex;
+                flex-flow: column wrap;
+                align-items: center;
+                .card-img{
+                    width: 220px;
+                    height: 250px;
+                    background-color: yellow;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 110px 110px 20px 20px;
+
+                    img{
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 50%;
+                    }
+                }
+                .card-body{
+                    text-align: center;
+                    h3{
+                        display: flex;
+                        flex-flow: column wrap;
+                        color: $purple99;
+                        font-weight: 500;
+                        line-height: 25px;
+                        margin-top: 20px;
+
+                        @include media($lg) {
+                            line-height: 30px;
+                            margin-top: 30px;
+                        }
+                    }
+                    .btn-wrap{
+                        margin-top: 20px;
+
+                        @include media($lg) {
+                            margin-top: 30px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

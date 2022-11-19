@@ -1826,6 +1826,195 @@ main p {
   }
 }
 
+#healthy-menu {
+  margin-top: 40px;
+}
+@media only screen and (min-width: 768px) {
+  #healthy-menu {
+    margin-top: 60px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #healthy-menu {
+    margin-top: 70px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #healthy-menu {
+    margin-top: 110px;
+  }
+}
+#healthy-menu .content-wrap {
+  display: flex;
+  flex-flow: column wrap;
+}
+#healthy-menu .content-wrap .content {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  #healthy-menu .content-wrap .content {
+    align-items: start;
+  }
+}
+#healthy-menu .content-wrap .content .head-wrap {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  row-gap: 7px;
+}
+@media only screen and (min-width: 768px) {
+  #healthy-menu .content-wrap .content .head-wrap {
+    flex-flow: row wrap;
+    align-items: start;
+    column-gap: 20px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #healthy-menu .content-wrap .content .head-wrap {
+    column-gap: 13px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #healthy-menu .content-wrap .content .head-wrap {
+    column-gap: 25 px;
+  }
+}
+#healthy-menu .content-wrap .content .head-wrap h1 {
+  color: #6a5399;
+  font-size: 25px;
+}
+@media only screen and (min-width: 992px) {
+  #healthy-menu .content-wrap .content .head-wrap h1 {
+    font-size: 35px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #healthy-menu .content-wrap .content .head-wrap h1 {
+    font-size: 50px;
+  }
+}
+#healthy-menu .content-wrap .content .arrow-wrap {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  margin-top: 10px;
+}
+@media only screen and (min-width: 768px) {
+  #healthy-menu .content-wrap .content .arrow-wrap {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+}
+#healthy-menu .content-wrap .content .arrow-wrap p {
+  text-align: center;
+  color: #9188a3;
+}
+@media only screen and (min-width: 576px) {
+  #healthy-menu .content-wrap .content .arrow-wrap p {
+    display: flex;
+    flex-flow: column wrap;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #healthy-menu .content-wrap .content .arrow-wrap p {
+    text-align: start;
+  }
+}
+#healthy-menu .content-wrap .content .arrow-wrap p span {
+  display: initial;
+}
+#healthy-menu .content-wrap .content .arrow-wrap div {
+  display: flex;
+  column-gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+@media only screen and (min-width: 768px) {
+  #healthy-menu .content-wrap .content .arrow-wrap div {
+    margin-top: 0px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #healthy-menu .content-wrap .content .arrow-wrap div {
+    column-gap: 13px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  #healthy-menu .content-wrap .content .arrow-wrap div {
+    column-gap: 17px;
+  }
+}
+#healthy-menu .content-wrap .content .arrow-wrap div .arrow {
+  border: 3px solid #e8e3ea;
+  color: #9a6dfb;
+}
+#healthy-menu .content-wrap .recipy-cetagory {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 20px;
+  margin-top: 40px;
+}
+#healthy-menu .content-wrap .recipy-cetagory .content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  display: flex;
+  column-gap: 10px;
+  flex-flow: row wrap;
+  padding-left: 15px;
+  background-color: #f9f1fe;
+}
+#healthy-menu .content-wrap .recipy-cetagory .content h3 {
+  color: #6a5399;
+}
+#healthy-menu .content-wrap .card-wrap .recipy-card {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+#healthy-menu .content-wrap .card-wrap .recipy-card .card-img {
+  width: 220px;
+  height: 250px;
+  background-color: yellow;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 110px 110px 20px 20px;
+}
+#healthy-menu .content-wrap .card-wrap .recipy-card .card-img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+#healthy-menu .content-wrap .card-wrap .recipy-card .card-body {
+  text-align: center;
+}
+#healthy-menu .content-wrap .card-wrap .recipy-card .card-body h3 {
+  display: flex;
+  flex-flow: column wrap;
+  color: #6a5399;
+  font-weight: 500;
+  line-height: 25px;
+  margin-top: 20px;
+}
+@media only screen and (min-width: 992px) {
+  #healthy-menu .content-wrap .card-wrap .recipy-card .card-body h3 {
+    line-height: 30px;
+    margin-top: 30px;
+  }
+}
+#healthy-menu .content-wrap .card-wrap .recipy-card .card-body .btn-wrap {
+  margin-top: 20px;
+}
+@media only screen and (min-width: 992px) {
+  #healthy-menu .content-wrap .card-wrap .recipy-card .card-body .btn-wrap {
+    margin-top: 30px;
+  }
+}
+
 #foot-wrap {
   background-image: linear-gradient(to right, white, #f2e9fa, white);
   margin-top: 40px;
@@ -1857,37 +2046,37 @@ main p {
 }
 
 #contact {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 @media only screen and (min-width: 576px) {
   #contact {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 @media only screen and (min-width: 992px) {
   #contact {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 @media only screen and (min-width: 1400px) {
   #contact {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 @media only screen and (min-width: 1800px) {
   #contact {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 @media only screen and (min-width: 1920px) {
   #contact {
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
 }
 
@@ -2003,8 +2192,45 @@ main p {
 .contact-left {
   grid-area: left;
 }
-.contact-left .top-logo h2 {
+.contact-left .logo {
+  display: flex;
+  align-items: center;
+  column-gap: 3px;
+  order: 1;
+}
+@media only screen and (min-width: 425px) {
+  .contact-left .logo {
+    column-gap: 4px;
+  }
+}
+.contact-left .logo img {
+  width: 15px;
+}
+@media only screen and (min-width: 992px) {
+  .contact-left .logo img {
+    width: 20px;
+    margin-right: 5px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .contact-left .logo img {
+    width: 25px;
+    margin-right: 10px;
+  }
+}
+.contact-left .logo h2 {
   color: #9356fb;
+  font-size: 25px;
+}
+@media only screen and (min-width: 992px) {
+  .contact-left .logo h2 {
+    font-size: 35px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .contact-left .logo h2 {
+    font-size: 50px;
+  }
 }
 .contact-left p {
   color: #9188a3;
@@ -2043,61 +2269,61 @@ footer .container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 @media only screen and (min-width: 425px) {
   footer .container {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 }
 @media only screen and (min-width: 576px) {
   footer .container {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 @media only screen and (min-width: 768px) {
   footer .container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 @media only screen and (min-width: 992px) {
   footer .container {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 }
 @media only screen and (min-width: 1200px) {
   footer .container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 @media only screen and (min-width: 1400px) {
   footer .container {
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-top: 35px;
+    padding-bottom: 35px;
   }
 }
 @media only screen and (min-width: 1800px) {
   footer .container {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 @media only screen and (min-width: 1920px) {
   footer .container {
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-top: 45px;
+    padding-bottom: 45px;
   }
 }
 

@@ -19,22 +19,22 @@
     }
 }
 #contact{
-    @include px(20px, 20px);
+    @include py(20px, 20px);
 
     @include media($sm) {
-        @include px(30px, 30px);
+        @include py(30px, 30px);
     }
     @include media($lg) {
-        @include px(40px, 40px);
+        @include py(40px, 40px);
     }
     @include media($xxl) {
-        @include px(50px, 50px);
+        @include py(50px, 50px);
     }
     @include media($mxl) {
-        @include px(60px, 60px);
+        @include py(60px, 60px);
     }
     @include media($lxl) {
-        @include px(70px, 70px);
+        @include py(70px, 70px);
     }
 }
 .contact-wrap {
@@ -126,9 +126,37 @@
 }
 .contact-left{
     grid-area: left;
-    .top-logo {
+
+    .logo {
+            display: flex;
+            align-items: center;
+            column-gap: 3px;
+            order: 1;
+    
+            @include media($xs) {
+                column-gap: 4px;
+            }
+        img {
+            width: 15px;
+            @include media($lg) {
+                width: 20px;
+                margin-right: 5px;
+            }
+            @include media ($mxl) {
+                width: 25px;
+                margin-right: 10px;
+            }
+        }
         h2{
-           color: $purplefbd; 
+            color: $purplefbd;
+            font-size: 25px;
+            @include media($lg) {
+                font-size: 35px;
+            }
+            @include media ($mxl) {
+                font-size: 50px;
+            }
+         
         }
     }
     p{

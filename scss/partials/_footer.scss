@@ -4,34 +4,34 @@ footer{
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
-        @include py(15px, 15px);
-        @include px(10px, 10px);
+        @include px(15px, 15px);
+        @include py(10px, 10px);
 
         @include media($xs) {
-            @include py(10px, 10px);
-            @include px(12px, 12px);
+            @include px(10px, 10px);
+            @include py(12px, 12px);
         }
         @include media($sm) {
-            @include py(0px, 0px);
-            @include px(15px, 15px);
+            @include px(0px, 0px);
+            @include py(15px, 15px);
         }
         @include media($md) {
-            @include px(20px, 20px);
+            @include py(20px, 20px);
         } 
         @include media($lg) {
-            @include px(25px, 25px);
+            @include py(25px, 25px);
         } 
         @include media($xl) {
-            @include px(30px, 30px);
+            @include py(30px, 30px);
         } 
         @include media($xxl) {
-            @include px(35px, 35px);
+            @include py(35px, 35px);
         } 
         @include media($mxl) {
-            @include px(40px, 40px);
+            @include py(40px, 40px);
         } 
         @include media($lxl) {
-            @include px(45px, 45px);
+            @include py(45px, 45px);
         } 
     }
 }
